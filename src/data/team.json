@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Fozail Ahmad",
+    "role": "President",
+    "email": "fozail.ahmad@mail.mcgill.ca",
+    "pronouns": "he/him",
+    "id": "fa2324presi",
+    "moreInfo": {
+      "description": "PhD Student in Computer Engineering (First Year). I really like computers obviously, I really like cars and exploring new technology. I like being practical, which is why I spent many years making robot during my younger years!",
+      "duties": [
+        "Preside at all meetings of the Student Branch.",
+        "Appoint Program, Publicity, and Membership committee Chairs promptly.",
+        "Complete the Student Branch Annual Plan https://sbr.vtools.ieee.org/.",
+        "Arrange for the election of new Officers annually https://officers.vtools.ieee.org/.",
+        "Student Branch Meeting/Event Reporting (4 per year): https://events.vtools.ieee.org/",
+        "Ensure smooth transition of information and materials to newly elected Officers and arrange an orderly transfer of Student Branch records.",
+        "Coordinate activities with local Section and Region volunteers. Information can be found via: rosters.ieee.org.",
+        "Communicate frequently with local University IEEE Student Branches."
+      ]
+    }
+  },
+  {
+    "name": "Justin Randisi",
+    "role": "VP Internal",
+    "email": "justin.randisi@mail.mcgill.ca",
+    "pronouns": "he/him",
+    "id": "jr2324vpint",
+    "moreInfo": {
+      "description": "",
+      "duties": [
+      ]
+    }
+  },
+  {
+    "name": "Mohammad Hossein Motavas",
+    "role": "VP Finance",
+    "id": "mhm2324vpfin",
+    "email": "mohammadhossein.motavas@mail.mcgill.ca",
+    "pronouns": "he/him",
+    "moreInfo": {
+      "description": "",
+      "duties": [
+      ]
+    }
+  },
+  {
+    "name": "Sogol Masoumzadeh",
+    "role": "Secretary",
+    "id": "sm2324secre",
+    "email": "sogol.masoumzadeh@mail.mcgill.ca",
+    "pronouns": "she/her",
+    "moreInfo": {
+      "description": "",
+      "duties": [
+      ]
+    }
+  },
+  {
+    "name": "Theo Ghanem",
+    "role": "VP IT",
+    "id": "tg2324vpit",
+    "email": "theo.ghanem@mail.mcgill.ca",
+    "pronouns": "he/him",
+    "moreInfo": {
+      "description": "",
+      "duties": [
+      ]
+    }
+  },
+  {
+    "name": "Antoine Phan",
+    "role": "Director of Web",
+    "id": "ap2324dirwe",
+    "email": "antoine.phan@mail.mcgill.ca",
+    "pronouns": "he/him",
+    "moreInfo": {
+      "description": "",
+      "duties": [
+      ]
+    }
+  },
+  {
+    "name": "Nicolas El Murr",
+    "role": "Director of Competitions",
+    "id": "nem2324dirco",
+    "email": "nicolas.elmurr@mail.mcgill.ca",
+    "pronouns": "he/him",
+    "moreInfo": {
+      "description": "",
+      "duties": [
+      ]
+    }
+  },
+  {
+    "name": "Hangyi Hao",
+    "role": "Director of Academic Affairs",
+    "id": "hh2324diraa",
+    "email": "hangyi.hao@mail.mcgill.ca",
+    "pronouns": "she/her",
+    "moreInfo": {
+      "description": "",
+      "duties": [
+      ]
+    }
+  }
+]

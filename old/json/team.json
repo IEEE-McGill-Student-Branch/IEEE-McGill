@@ -1,0 +1,214 @@
+[
+  {
+    "id": "fa",
+    "name": "Fozail Ahmad",
+    "jobTitle": "President",
+    "type": "m",
+    "description": "PhD Student in Computer Engineering (First Year). I really like computers obviously, I really like cars and exploring new technology. I like being practical, which is why I spent many years making robot during my younger years!",
+    "Year": "2021-2022",
+    "moreInfo": {
+      "email": "fozail.ahmad@mail.mcgill.ca",
+      "Duties": [
+        "Preside at all meetings of the Student Branch.",
+        "Preside at all meetings of the Student Branch.",
+        "Appoint Program, Publicity, and Membership committee Chairs promptly.",
+        "Complete the Student Branch Annual Plan https://sbr.vtools.ieee.org/.",
+        "Arrange for the election of new Officers annually https://officers.vtools.ieee.org/.",
+        "Student Branch Meeting/Event Reporting (4 per year): https://events.vtools.ieee.org/",
+        "Ensure smooth transition of information and materials to newly elected Officers and arrange an orderly transfer of Student Branch records.",
+        "Coordinate activities with local Section and Region volunteers. Information can be found via: rosters.ieee.org.",
+        "Communicate frequently with local University IEEE Student Branches."
+      ]
+    }
+  },
+  {
+    "id": "pp",
+    "name": "Pulasthi Peiris",
+    "jobTitle": "VP Internal",
+    "type": "m",
+    "description": "I'm in my third-year at McGill studying Electrical Engineering. I speak at 40 Hz sometimes and I love electric vehicles and cheesecake.",
+    "Year": "2021-2022",
+    "moreInfo": {
+      "email": "gallage.peiris@mail.mcgill.ca",
+      "Duties": [
+        "Chair the Program and Membership Committees.",
+        "Organize field trips or special events beyond regular program efforts.",
+        "Assist the Branch Chair in following up on assigned committee responsibilities.",
+        "Perform all functions of the Branch Chair in his/her absence or upon request."
+      ]
+    }
+  },
+  {
+    "id": "mb",
+    "name": "Muhammad Bilal",
+    "jobTitle": "VP Finance",
+    "type": "m",
+    "description": "",
+    "Year": "2021-2022",
+    "moreInfo": {
+      "email": "gallage.peiris@mail.mcgill.ca",
+      "Duties": [
+        "Maintain the appropriate financial accounts. Your bank account should be interest bearing and require two signatures; the faculty counselor should always be one of those signatures.",
+        "Prepare an annual budget for inclusion in the Student Branch Annual Plan (due 1 February annually – https://sbr.vtools.ieee.org/).",
+        "Prepare the final Financial Statement for inclusion in the Student Branch Annual Plan.",
+        "Oversee all fundraising efforts.",
+        "Arrange for an orderly transfer of all financial records to the incoming Treasurer."
+      ]
+    }
+  },
+  {
+    "id": "ak",
+    "name": "Alondra Karam",
+    "jobTitle": "Secretary",
+    "type": "f",
+    "description": "My name is Alondra and I'm the Secretary of IEEE! I'm currently a U2 Electrical Engineering Student with a minor in World Cinemas. Even though I enjoy learning about the tech industry, I love discovering new music, movies and fashion!",
+    "Year": "2021-2022",
+    "moreInfo": {
+      "email": "alondra.karam@mail.mcgill.ca",
+      "Duties": [
+        "Keep detailed minutes of each meeting.",
+        "Maintain the membership roster and committee assignments on the Branch website (http://sites.ieee.org/hosting/)",
+        "Be responsible for all correspondence.",
+        "Post a calendar of events. Meetings and Events should also be reported for all IEEE members to view via: https://events.vtools.ieee.org/",
+        "Ensure that the Branch Constitution and Bylaws are adhered to.",
+        "Arrange for an orderly transfer of all records to the incoming Secretary."
+      ]
+    }
+  },
+  {
+    "id": "sl",
+    "name": "Shilei Lin",
+    "jobTitle": "Director of Web",
+    "type": "m",
+    "description": "My name is Shilei Lin, currently a second-year master student in Computer Science. A fun fact about myself is that I am a LEGO zealous fan.",
+    "Year": "2021-2022",
+    "moreInfo": {
+      "email": "shilei.lin@mail.mcgill.ca",
+      "Duties": [
+        "Develop proposals for website maintenance and development.",
+        "Direct and manage the IT subcommittee to ensure continued availability of all web/IT services and meet the Branch’s goals",
+        "Actively partake in the selection of the IT subcommittee.",
+        "Develop proposals for lab IT management to ensure continued availability and maintenance of the lab’s networked computers.",
+        "Develop proposals for the maintenance of other IT services, such as Google Apps services, email services, or other services as the Executive Committee may direct.",
+        "Develop a plan and schedule for maintenance, upgrade, repair or expansion of branch IT equipment."
+      ]
+    }
+  },
+  {
+    "id": "td",
+    "name": "Thomas Dormart",
+    "jobTitle": "VP IT",
+    "type": "m",
+    "description": "Hey! Thomas here, serving as VP IT. Even if I'm keen on computer hardware and envision myself in silicon valley, I still love practicing tennis as a non-tech activity! My main hustle is electrical engineering (U2), while I'm also an entrepreneur as a side one.",
+    "Year": "2021-2022",
+    "moreInfo": {
+      "email": "",
+      "Duties": [
+        "Develop proposals for website maintenance and development.",
+        "Direct and manage the IT subcommittee to ensure continued availability of all web/IT services and meet the Branch’s goals",
+        "Actively partake in the selection of the IT subcommittee.",
+        "Develop proposals for lab IT management to ensure continued availability and maintenance of the lab’s networked computers.",
+        "Develop proposals for the maintenance of other IT services, such as Google Apps services, email services, or other services as the Executive Committee may direct.",
+        "Develop a plan and schedule for maintenance, upgrade, repair or expansion of branch IT equipment.",
+        "Periodically report to the Executive Committee on the status of the website and IT equipment and the execution of pending work thereof; conduct such other business as the Executive Committee may direct."
+      ]
+    }
+  },
+  {
+    "id": "nk",
+    "name": "Neeraj Katiyar",
+    "jobTitle": "Director of External Affairs",
+    "type": "m",
+    "description": "![Neeraj Katiyar is a technology enthusiast since his childhood. He has been a firm believer that \"engineers are torchbearers of technology innovation\": Hence it made it a self-evident choice to go for Computer Science and Engineering as a major in his undergraduate (2016). He worked as a software Engineer with Accenture for a few years before his master's at McGill. Virtual classroom system application (to help the underprivileged children in remote villages), BOT auditor, APJ Abdul Kalam merit scholarship and Accenture’s highest ACE innovation award are some of his noticeable work and recognition. Currently, his master's research at McGill involves exploiting machine learning techniques to improve software engineering practices in gas turbine engines in collaboration with Siemens Energy Canada.](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d5e5c4d7-40f5-4110-809a-2b52e8f3ab21/Neeraj.png)\n\nNeeraj Katiyar is a technology enthusiast since his childhood. He has been a firm believer that \"engineers are torchbearers of technology innovation\": Hence it made it a self-evident choice to go for Computer Science and Engineering as a major in his undergraduate (2016). He worked as a software Engineer with Accenture for a few years before his master's at McGill. Virtual classroom system application (to help the underprivileged children in remote villages), BOT auditor, APJ Abdul Kalam merit scholarship and Accenture’s highest ACE innovation award are some of his noticeable work and recognition. Currently, his master's research at McGill involves exploiting machine learning techniques to improve software engineering practices in gas turbine engines in collaboration with Siemens Energy Canada.",
+    "Year": "2021-2022",
+    "moreInfo": {
+      "email": "",
+      "Duties": [
+        "Develop a communication plan to reach out to corporate sponsors and recruit IEEE members",
+        "Develop internal McGill funding applications.",
+        "Coordinate with other directors advertising sponsor logos.",
+        "Assemble a sponsorship committee to help with corporate communication and recruitment.",
+        "Conduct such other business as the Executive Committee may direct.",
+        "Chair the sponsorship committee."
+      ]
+    }
+  },
+  {
+    "id": "jr",
+    "name": "Justin Randisi",
+    "jobTitle": "Director of Marketing",
+    "type": "m",
+    "description": "Hello! My name is Justin Randisi and I am currently undergoing my second year in software engineering.",
+    "Year": "2021-2022",
+    "moreInfo": {
+      "email": "",
+      "Duties": [
+        "Develop general marketing and branding strategies to improve awareness of the Branch or IEEE and its activities, advance the standing of the Branch, or provide benefits to the community.",
+        "Develop proposals for marketing materials (including but not limited to posters, banners, written copy and achievement badges) targeting any advertising media in use by the Branch, including print, web, social media, email newsletters, or other media.",
+        "Ensure the Branch’s logo and branding are used correctly in all marketing materials with the advice and consent of the Executive Committee, establish teams and develop materials to implement the marketing activities specified",
+        "Supervise and execute the tasks needed to achieve the marketing objectives.",
+        "Periodically report to the Executive Committee on the status of authorized marketing activities and the outcome of completed activities.",
+        "Conduct such other business as the Executive Committee may direct."
+      ]
+    }
+  },
+  {
+    "id": "cs",
+    "name": "Chen Su",
+    "jobTitle": "Director of Competitions",
+    "type": "f",
+    "description": "Chen Su is a first-year PhD student in electrical and computer engineering. Her research interests include computational regulatory genomics and machine learning.",
+    "Year": "2021-2022",
+    "moreInfo": {
+      "email": "",
+      "Duties": [
+        "Develop proposals for competitions and contests that will improve awareness of the Branch or the IEEE, allow participants to improve relevant engineering skills, or provide a benefit to the community.",
+        "Establish a plan and schedule for competitive activities, both internally and externally organized, including but not limited to IEEE Xtreme, that can be undertaken by the Branch and its members throughout the academic year.",
+        "With the advice and consent of the Executive Committee, establish teams and develop materials to implement the competitions and contests specified.",
+        "Supervise and execute the tasks needed to implement the competitions and contests.",
+        "Periodically report to the Executive Committee on the status of authorized competitions and contests and the outcome of completed events.",
+        "Conduct such other business as the Executive Committee may direct."
+      ]
+    }
+  },
+  {
+    "id": "fs",
+    "name": "Firzana Sadik",
+    "jobTitle": "Director of Events",
+    "type": "f",
+    "description": "Hi! My name is Firzana, currently in my last year (U3) in majoring in Computer Science and minoring in IDS :) I'm originally from Malaysia but had the opportunity to grow up in quite a few places. So if you're a newbie in McGill, don't be afraid to hmu since I know what it feels like to be the new person in town... Or if you also equally love lettuce and cats like I do, then lmk so I don't feel like the only one out here with a weird obsession~",
+    "Year": "2021-2022",
+    "moreInfo": {
+      "email": "",
+      "Duties": [
+        "Develop proposals for events that will improve awareness of the Branch or the IEEE, further the professional development of members, or allow members and others in the University community to interact in social context.",
+        "Establish a plan and schedule for such projects that can be undertaken by the Branch and its members throughout the academic year.",
+        "With the advice and consent of the Executive Committee, establish teams and processes to implement the events specified.",
+        "Supervise and execute the tasks necessary to successfully implement the events.",
+        "Periodically report to the Executive Committee on the status of authorized events and the outcome of completed events."
+      ]
+    }
+  },
+  {
+    "id": "ys",
+    "name": "Youssef Safari",
+    "jobTitle": "Director of Academic Affairs",
+    "type": "m",
+    "description": "![Yousef was born and raised in Amol, Mazandaran, Iran. He is currently working toward the Ph.D. degree in electrical engineering from McGill University, Montreal, Canada at THInK Team. His current research interests include heterogeneous system integration, neuromorphic computing, power delivery, and thermal management.](https://images.unsplash.com/photo-1601931935821-5fbe71157695?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb)\n\nYousef was born and raised in Amol, Mazandaran, Iran. He is currently working toward the Ph.D. degree in electrical engineering from McGill University, Montreal, Canada at THInK Team. His current research interests include heterogeneous system integration, neuromorphic computing, power delivery, and thermal management.",
+    "Year": "2021-2022",
+    "moreInfo": {
+      "email": "",
+      "Duties": [
+        "Oversee the operations of the Branch office and laboratory facilities and ensure a consistent quality of service is provided to users.",
+        "Provide training, feedback, and supervision to laboratory supervisors and other volunteers authorized to access laboratory facilities.",
+        "Manage the application and evaluation process for new laboratory supervisors.",
+        "Establish policies for the proper and safe operation of Branch office and laboratory equipment and communicate these policies to users.",
+        "Ensure the general cleanliness and organization of the Branch office and laboratory facilities",
+        "Develop a plan and schedule for the maintenance, upgrade, repair and expansion of Branch office and laboratory equipment as well as supervising and executing the tasks necessary to successfully implement the equipment maintenance and upgrade plans.",
+        "Periodically report to the Executive Committee on the status of the laboratory and office facilities, the services provided to users, and any maintenance or upgrade initiatives.",
+        "Conduct such other business as the Executive Committee may direct."
+      ]
+    }
+  }
+]
+
