@@ -10,9 +10,9 @@
   <div class="memberDiv">
     {#each data.membersInfo as member}
       <Member memberID={member.id}>
-        <div slot="profilepic">
+        <!-- <div slot="profilepic">
           <img class="profilepic" src={member.imageSrc} alt={member.id} />
-        </div>
+        </div> -->
         <div slot="name">{member.name}</div>
         <div slot="pronouns">{member.pronouns}</div>
         <div slot="role">{member.role}</div>

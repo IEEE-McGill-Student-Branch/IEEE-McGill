@@ -12,7 +12,7 @@
 		<ul>
 			{#each data.summaries as { slug, title }}
 				<li>
-					<a href="/blog/{slug}">{title}</a>
+					<a href="/events/{slug}">{title}</a>
 				</li>
 			{/each}
 		</ul>
