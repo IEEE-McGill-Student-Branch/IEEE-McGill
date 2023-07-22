@@ -1,11 +1,12 @@
 <script lang="ts">
+  import { page } from "$app/stores";
 </script>
 
 <nav class="">
   <!-- <img src={Logo} alt="Logo" width="50px" /> -->
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/events">Events</a></li>
+    <li><a href="/" aria-current={$page.url.pathname === '/'}>Home</a></li>
+    <li><a href="/events" aria-current={$page.url.pathname === '/events'}>Events</a></li>
     <li><a href="/sponsors">Sponsors</a></li>
     <li><a href="/members">Members</a></li>
   </ul>

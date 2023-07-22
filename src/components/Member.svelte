@@ -1,5 +1,8 @@
-<script lang="ts">
-	export let memberID: string;
+<script>
+	/**
+	 * @type {string} 
+	*/
+	export let memberID;
 </script>
 
 <article class="member" id="{memberID}">

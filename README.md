@@ -12,7 +12,6 @@ Author: Antoine Phan @notkaramel - Director of Web 2023-2024
 ## Resources
 - [Svelte](https://svelte.dev/)
 - [SvelteKit](https://kit.svelte.dev/)
-- [SASS](https://sass-lang.com/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [TaildindCSS for SvelteKit](https://tailwindcss.com/docs/guides/sveltekit)
 

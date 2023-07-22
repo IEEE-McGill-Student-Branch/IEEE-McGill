@@ -1,5 +1,5 @@
 <script lang="ts">
-    export const Logo="/images/small_logo.png";
+    import Logo from "$images/small_logo.png";
 	import Section from "$components/Section.svelte";
 	import "../app.css";
 </script>

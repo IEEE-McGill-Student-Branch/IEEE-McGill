@@ -1,17 +1,17 @@
-<script lang="ts">
+<script>
   import Member from "$components/Member.svelte";
   import Section from "$components/Section.svelte";
-  export let data: any;
+  export let data;
 </script>
 
 <title>Contact</title>
 
 <Section>
   <div class="memberDiv">
-    {#each data.members as member}
+    {#each data.membersInfo as member}
       <Member memberID={member.id}>
         <div slot="profilepic">
-          <img class="profilepic" src={member.profilePicSrc} alt={member.id} />
+          <img class="profilepic" src={member.imageSrc} alt={member.id} />
         </div>
         <div slot="name">{member.name}</div>
         <div slot="pronouns">{member.pronouns}</div>

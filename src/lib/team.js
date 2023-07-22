@@ -1,4 +1,4 @@
-[
+export const members = [
   {
     "name": "Fozail Ahmad",
     "role": "President",
@@ -103,4 +103,4 @@
       ]
     }
   }
-]
+];
