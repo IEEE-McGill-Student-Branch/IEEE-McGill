@@ -1,5 +1,6 @@
 <script>
   import Section from "$components/Section.svelte";
+  import EventPost from "$components/EventPost.svelte";
   export let data;
 </script>
 
@@ -10,11 +11,24 @@
 <Section>
   <h1>Event Posts</h1>
 
-  <ul>
+  <div id="eventPosts">
     {#each data.summaries as { slug, title }}
-      <li><a href="/events/{slug}">{title}</a></li>
+      <EventPost eventSlug={slug}>
+        <div slot="thumbnail">
+          <img
+            src="https://images.unsplash.com/photo-1682686581663-179efad3cd2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            alt="Event {title} thumbnail"
+          />
+        </div>
+        <div slot="title">{title}</div>
+        <div slot="short-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quibusdam, quia, quod voluptatem voluptas quos voluptates
+          quas quibusdam, quia, quod voluptatem voluptas quos voluptates quas
+        </div>
+      </EventPost>
     {/each}
-  </ul>
+  </div>
 </Section>
 
 <Section>
@@ -62,5 +76,9 @@
     min-width: 90%;
     padding: 0.5rem;
     margin: 1rem auto;
+  }
+
+  #eventPosts {
+    @apply flex flex-wrap justify-center p-3;
   }
 </style>
