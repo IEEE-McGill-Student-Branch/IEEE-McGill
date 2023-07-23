@@ -13,16 +13,19 @@
 </nav>
 
 <style lang="postcss">
+  /* Normal Desktop Settings */
   nav {
-    @apply bg-rose-600 px-4 py-2 shadow-md;
+    width: 100%;
+    @apply bg-rose-600;
   }
 
   nav ul {
-    @apply flex items-center gap-3 justify-center;
+    @apply list-none overflow-hidden flex items-center gap-3;
+    @apply justify-evenly;
   }
 
   nav ul li {
-    @apply text-xl px-4 py-2 fill-inherit;
+    @apply float-left;
     transition: all 0.2s ease-in-out;
   }
 
@@ -32,6 +35,21 @@
 
   nav ul li a {
     margin: 0 1rem;
-    @apply text-center font-bold text-white;
+    @apply text-2xl p-4 block text-center font-bold text-white;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+    }
+    nav ul {
+      @apply flex-col;
+      @apply items-center;
+      @apply gap-2;
+    }
+
+    nav ul li {
+      @apply text-2xl;
+    }
   }
 </style>

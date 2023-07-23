@@ -18,7 +18,7 @@
   </h2>
 
   <p>
-    <slot name="short-description">
+    <slot name="shortDescription">
       <em>No short description :(</em>
     </slot>
   </p>
@@ -26,11 +26,19 @@
 </article>
 
 <style lang="postcss">
+    * {
+      transition: all 0.1s ease-out; 
+    }
+
     article {
         @apply p-4 m-6 w-96 bg-blue-50;
         @apply border-4 border-gray-300;
         @apply rounded-md;
         @apply shadow-md;
+    }
+
+    article:hover {
+      @apply border-blue-500 cursor-pointer shadow-lg;
     }
     
     h2 {

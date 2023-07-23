@@ -12,7 +12,7 @@
   <h1>Event Posts</h1>
 
   <div id="eventPosts">
-    {#each data.summaries as { slug, title }}
+    {#each data.summaries as { slug, title, shortDesc }}
       <EventPost eventSlug={slug}>
         <div slot="thumbnail">
           <img
@@ -21,16 +21,15 @@
           />
         </div>
         <div slot="title">{title}</div>
-        <div slot="short-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatum, quibusdam, quia, quod voluptatem voluptas quos voluptates
-          quas quibusdam, quia, quod voluptatem voluptas quos voluptates quas
+        <div slot="shortDescription">
+          {@html shortDesc}
         </div>
       </EventPost>
     {/each}
   </div>
 </Section>
 
+<!-- Event Calendar -->
 <Section>
   <h2>Events Calendar</h2>
   <!-- Advanced Atrributes: https://support.google.com/calendar/thread/23205641/advanced-embed-option-descriptions?hl=en -->

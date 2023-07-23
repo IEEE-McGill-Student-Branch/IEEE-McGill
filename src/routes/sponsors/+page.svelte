@@ -13,9 +13,13 @@
   <div>
     {#each data.sponsors as sponsor}
       <Sponsor>
-        <img src={sponsor.imageSrc} alt={sponsor.name} />
-        <h2>{sponsor.name}</h2>
-        <a href={sponsor.link}>Learn More</a>
+        <h2 slot=name>{sponsor.name}</h2>
+
+        <div slot=logo>
+          <img src={sponsor.logo} alt={sponsor.name} />
+        </div>
+        
+        <a slot=link href={sponsor.link}>Learn More</a>
       </Sponsor>
     {/each}
   </div>

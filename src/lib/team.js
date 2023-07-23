@@ -1,10 +1,21 @@
+import BlankPFP from "$images/blankPFP.png";
+
+import President from "$images/IEEEexec-5270.png";
+// import VPInternal from "$images/IEEEexec-5148.png";
+import VPIT from "$images/IEEEexec-5149.png";
+import VPFinance from "$images/IEEEexec-5181.png";
+import Secretary from "$images/IEEEexec-5256.png";
+import DirectorWeb from "$images/IEEEexec-5214.png";
+import DirectorCompetitions from "$images/IEEEexec-5167.png";
+import DirectorAcademicAffairs from "$images/IEEEexec-5183.png";
+
 export const members = [
   {
     "name": "Fozail Ahmad",
     "role": "President",
-    "email": "fozail.ahmad@mail.mcgill.ca",
+    "email": "ieee.president@mcgilleus.ca",
     "pronouns": "he/him",
-    "id": "fa2324presi",
+    "profilepic": President,
     "moreInfo": {
       "description": "PhD Student in Computer Engineering (First Year). I really like computers obviously, I really like cars and exploring new technology. I like being practical, which is why I spent many years making robot during my younger years!",
       "duties": [
@@ -20,11 +31,23 @@ export const members = [
     }
   },
   {
+    "name": "Sogol Masoumzadeh",
+    "role": "Secretary",
+    "profilepic": Secretary,
+    "email": "ieee.secretary@mcgilleus.ca",
+    "pronouns": "she/her",
+    "moreInfo": {
+      "description": "",
+      "duties": [
+      ]
+    }
+  },
+  {
     "name": "Justin Randisi",
     "role": "VP Internal",
-    "email": "justin.randisi@mail.mcgill.ca",
+    "email": "ieee.internal@mcgilleus.ca",
     "pronouns": "he/him",
-    "id": "jr2324vpint",
+    "profilepic": BlankPFP,
     "moreInfo": {
       "description": "",
       "duties": [
@@ -34,21 +57,9 @@ export const members = [
   {
     "name": "Mohammad Hossein Motavas",
     "role": "VP Finance",
-    "id": "mhm2324vpfin",
-    "email": "mohammadhossein.motavas@mail.mcgill.ca",
+    "profilepic": VPFinance,
+    "email": "ieee.finance@mcgilleus.ca",
     "pronouns": "he/him",
-    "moreInfo": {
-      "description": "",
-      "duties": [
-      ]
-    }
-  },
-  {
-    "name": "Sogol Masoumzadeh",
-    "role": "Secretary",
-    "id": "sm2324secre",
-    "email": "sogol.masoumzadeh@mail.mcgill.ca",
-    "pronouns": "she/her",
     "moreInfo": {
       "description": "",
       "duties": [
@@ -58,32 +69,8 @@ export const members = [
   {
     "name": "Theo Ghanem",
     "role": "VP IT",
-    "id": "tg2324vpit",
-    "email": "theo.ghanem@mail.mcgill.ca",
-    "pronouns": "he/him",
-    "moreInfo": {
-      "description": "",
-      "duties": [
-      ]
-    }
-  },
-  {
-    "name": "Antoine Phan",
-    "role": "Director of Web",
-    "id": "ap2324dirwe",
-    "email": "antoine.phan@mail.mcgill.ca",
-    "pronouns": "he/him",
-    "moreInfo": {
-      "description": "",
-      "duties": [
-      ]
-    }
-  },
-  {
-    "name": "Nicolas El Murr",
-    "role": "Director of Competitions",
-    "id": "nem2324dirco",
-    "email": "nicolas.elmurr@mail.mcgill.ca",
+    "profilepic": VPIT,
+    "email": "ieee.it@mcgilleus.ca",
     "pronouns": "he/him",
     "moreInfo": {
       "description": "",
@@ -94,13 +81,37 @@ export const members = [
   {
     "name": "Hangyi Hao",
     "role": "Director of Academic Affairs",
-    "id": "hh2324diraa",
-    "email": "hangyi.hao@mail.mcgill.ca",
+    "profilepic": DirectorAcademicAffairs,
+    "email": "ieee.academicaffairs@mcgilleus.ca",
     "pronouns": "she/her",
     "moreInfo": {
       "description": "",
       "duties": [
       ]
     }
-  }
+  },
+  {
+    "name": "Antoine Phan",
+    "role": "Director of Web",
+    "profilepic": DirectorWeb,
+    "email": "ieee.web@mcgilleus.ca",
+    "pronouns": "he/him",
+    "moreInfo": {
+      "description": "",
+      "duties": [
+      ]
+    }
+  },
+  {
+    "name": "Nicolas El Murr",
+    "role": "Director of Competitions",
+    "profilepic": DirectorCompetitions,
+    "email": "ieee.competitions@mcgilleus.ca",
+    "pronouns": "he/him",
+    "moreInfo": {
+      "description": "",
+      "duties": [
+      ]
+    }
+  },
 ];

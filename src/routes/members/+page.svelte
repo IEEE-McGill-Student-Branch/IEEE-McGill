@@ -1,22 +1,29 @@
 <script>
+  import { fade, draw, fly } from 'svelte/transition';
   import Member from "$components/Member.svelte";
   import Section from "$components/Section.svelte";
+  import GroupPicture from "$images/IEEEexec-5293.png";
   export let data;
 </script>
 
-<title>Contact</title>
+<title>Meet the team</title>
 
 <Section>
+  <h1>Meet the team</h1>
+  <img src={GroupPicture} alt="IEEE group"/>
   <div class="memberDiv">
-    {#each data.membersInfo as member}
-      <Member memberID={member.id}>
-        <!-- <div slot="profilepic">
-          <img class="profilepic" src={member.imageSrc} alt={member.id} />
-        </div> -->
-        <div slot="name">{member.name}</div>
+    {#each data.members as member}
+      <Member>
+        <div slot="profilepic">
+          <img
+            id="profilepic"
+            src={member.profilepic}
+            alt="{member.name} pic"
+          />
+        </div>
+        <div id="name" slot="name">{member.name}</div>
         <div slot="pronouns">{member.pronouns}</div>
         <div slot="role">{member.role}</div>
-        <div slot="email">{member.email}</div>
       </Member>
     {/each}
   </div>
@@ -29,11 +36,20 @@
     transition: all 1s ease-in-out;
   }
 
-  .profilepic {
-    width: 12rem;
+  h1 {
+    @apply text-4xl text-center py-4 font-semibold;
   }
 
   .memberDiv {
     @apply flex flex-wrap justify-center p-4;
+  }
+
+  #name {
+    @apply text-2xl;
+  }
+
+  #profilepic {
+    width: 16rem;
+    margin: 0 1em 0 0;
   }
 </style>
