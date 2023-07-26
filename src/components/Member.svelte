@@ -2,16 +2,18 @@
   <slot name="profilepic">
     <span class="missing">N/A</span>
   </slot>
-  <div>
-    <slot name="name" id="name">
-      <span class="missing">Who?</span>
-    </slot>
+  <div id="info">
+    <p id="name">
+      <slot name="name"/>
+    </p>
     <slot name="pronouns">
       <span class="missing">N/A</span>
     </slot>
-    <slot name="role">
-      <span class="missing">Role?</span>
-    </slot>
+    <p id=role>
+      <slot name="role">
+        <span class="missing">Role?</span>
+      </slot>
+    </p>
   </div>
 </article>
 
@@ -21,27 +23,28 @@
   }
 
   .member {
-    @apply flex items-center;
-    width: 40rem;
-    height: 24rem;
+    @apply flex flex-col items-center;
+    width: 30rem;
+    height: 36rem;
     border: #da5555af 5px solid;
     border-radius: 13px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 1em;
-    margin: 2rem 2rem;
+    padding: 1rem;
+    margin: 1rem 1.2rem;
   }
 
+  #info {
+    @apply text-center;
+  }
+
+  #name {
+    @apply text-3xl font-semibold font-sans;
+  }
+
+  #role {
+    @apply text-2xl;
+  }
   .missing {
     color: #999;
   }
-
-  /* .moreInfo {
-		visibility: hidden;
-		transition: all 1s ease-in-out;
-	}
-
-	.member:hover > .moreInfo {
-		cursor: pointer;
-		visibility: visible;
-	} */
 </style>

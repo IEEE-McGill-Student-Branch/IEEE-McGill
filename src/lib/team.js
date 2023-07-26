@@ -1,13 +1,13 @@
 import BlankPFP from "$images/blankPFP.png";
 
-import President from "$images/IEEEexec-5270.png";
-// import VPInternal from "$images/IEEEexec-5148.png";
-import VPIT from "$images/IEEEexec-5149.png";
-import VPFinance from "$images/IEEEexec-5181.png";
-import Secretary from "$images/IEEEexec-5256.png";
-import DirectorWeb from "$images/IEEEexec-5214.png";
-import DirectorCompetitions from "$images/IEEEexec-5167.png";
-import DirectorAcademicAffairs from "$images/IEEEexec-5183.png";
+import President from "$images/IEEEexecSquare-5266.png";
+// import VPInternal from "$images/IEEEexecSquare-5148.png";
+import VPIT from "$images/IEEEexecSquare-5149.png";
+import VPFinance from "$images/IEEEexecSquare-5225.png";
+import Secretary from "$images/IEEEexecSquare-5256.png";
+import DirectorWeb from "$images/IEEEexecSquare-5287.png";
+import DirectorCompetitions from "$images/IEEEexecSquare-5167.png";
+import DirectorAcademicAffairs from "$images/IEEEexecSquare-5138.png";
 
 export const members = [
   {

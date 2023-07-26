@@ -8,9 +8,9 @@
 
 <title>Meet the team</title>
 
-<Section>
   <h1>Meet the team</h1>
   <img src={GroupPicture} alt="IEEE group"/>
+<Section>
   <div class="memberDiv">
     {#each data.members as member}
       <Member>
@@ -18,10 +18,10 @@
           <img
             id="profilepic"
             src={member.profilepic}
-            alt="{member.name} pic"
+            alt="{member.name} profile picture"
           />
         </div>
-        <div id="name" slot="name">{member.name}</div>
+        <div slot="name">{member.name}</div>
         <div slot="pronouns">{member.pronouns}</div>
         <div slot="role">{member.role}</div>
       </Member>
@@ -44,12 +44,9 @@
     @apply flex flex-wrap justify-center p-4;
   }
 
-  #name {
-    @apply text-2xl;
-  }
-
   #profilepic {
-    width: 16rem;
-    margin: 0 1em 0 0;
+    width: 30rem;
+    height: fit-content;
+    @apply p-2;
   }
 </style>

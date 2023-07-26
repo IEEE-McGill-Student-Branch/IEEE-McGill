@@ -5,10 +5,18 @@
 <nav class="">
   <!-- <img src={Logo} alt="Logo" width="50px" /> -->
   <ul>
-    <li><a href="/" aria-current={$page.url.pathname === '/'}>Home</a></li>
-    <li><a href="/events" aria-current={$page.url.pathname === '/events'}>Events</a></li>
-    <li><a href="/sponsors">Sponsors</a></li>
-    <li><a href="/members">Members</a></li>
+    <li aria-current={$page.url.pathname === "/" ? "page" : undefined}>
+      <a href="/">Home</a>
+    </li>
+    <li aria-current={$page.url.pathname === "/events" ? "page" : undefined}>
+      <a href="/events">Events</a>
+    </li>
+    <li aria-current={$page.url.pathname === "/sponsors" ? "page" : undefined}>
+      <a href="/sponsors">Sponsors</a>
+    </li>
+    <li aria-current={$page.url.pathname === "/members" ? "page" : undefined}>
+      <a href="/members">Members</a>
+    </li>
   </ul>
 </nav>
 
@@ -25,8 +33,20 @@
   }
 
   nav ul li {
-    @apply float-left;
+    @apply float-left relative;
     transition: all 0.2s ease-in-out;
+  }
+
+  nav ul li[aria-current='page']::before {
+    --size: 10px;
+		content: '';
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: calc(50% - var(--size));
+		border: var(--size) solid transparent;
+		border-top: var(--size) solid #fff;
   }
 
   nav ul li:hover {
