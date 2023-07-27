@@ -6,10 +6,9 @@
   export let data;
 </script>
 
-<title>Meet the team</title>
+<title>Meet the team!</title>
 
-  <h1>Meet the team</h1>
-  <img src={GroupPicture} alt="IEEE group"/>
+  <h1>Meet the team!</h1>
 <Section>
   <div class="memberDiv">
     {#each data.members as member}
@@ -27,6 +26,8 @@
       </Member>
     {/each}
   </div>
+  <img src={GroupPicture} alt="IEEE group"/>
+
 </Section>
 
 <!-- CONTACT PAGE -->
@@ -47,6 +48,6 @@
   #profilepic {
     width: 30rem;
     height: fit-content;
-    @apply p-2;
+    @apply shadow-gray-500 drop-shadow-lg;
   }
 </style>

@@ -18,6 +18,11 @@
   </h2>
 
   <p>
+    <slot name=date/>
+    <slot name=location/>
+  </p>
+
+  <p>
     <slot name="shortDescription">
       <em>No short description :(</em>
     </slot>

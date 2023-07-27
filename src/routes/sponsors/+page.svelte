@@ -5,21 +5,17 @@
 </script>
 
 <head>
-  <title>Sponsors</title>
+  <title>Our Sponsors</title>
 </head>
 
 <Section>
-  <h1>SPONSOR PAGE</h1>
+  <h1>Special thanks to our sponsors throughout our events!</h1>
   <div>
     {#each data.sponsors as sponsor}
-      <Sponsor>
-        
-        <div slot=logo>
+      <Sponsor sponsorLink={sponsor.link}>
+        <div slot="logo">
           <img src={sponsor.logo} alt={sponsor.name} />
         </div>
-        <h2 slot=name>{sponsor.name}</h2>
-        
-        <a slot=link href={sponsor.link}>Learn More</a>
       </Sponsor>
     {/each}
   </div>

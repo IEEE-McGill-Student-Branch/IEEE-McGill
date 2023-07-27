@@ -12,7 +12,7 @@
   <h1>Event Posts</h1>
 
   <div id="eventPosts">
-    {#each data.summaries as { slug, title, shortDesc }}
+    {#each data.summaries as { slug, title, shortDesc, date, location }}
       <EventPost eventSlug={slug}>
         <div slot="thumbnail">
           <img
@@ -21,6 +21,8 @@
           />
         </div>
         <div slot="title">{title}</div>
+        <div slot=date>{date}</div>
+        <div slot=location>{location}</div>
         <div slot="shortDescription">
           {@html shortDesc}
         </div>

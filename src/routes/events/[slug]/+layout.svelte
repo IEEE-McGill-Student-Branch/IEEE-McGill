@@ -1,30 +1,42 @@
 <script>
-	export let data;
+  import Section from "$components/Section.svelte";
+  export let data;
 </script>
 
 <div class="layout">
-	<main>
-		<slot />
-	</main>
+  <main>
+    <slot />
+  </main>
 
-	<aside>
-		<h2>More posts</h2>
-		<ul>
-			{#each data.summaries as { slug, title }}
-				<li>
-					<a href="/events/{slug}">{title}</a>
-				</li>
-			{/each}
-		</ul>
-	</aside>
+  <aside>
+    <Section>
+      <h2 id="more-events">More Events</h2>
+      ------------
+      <ul>
+        {#each data.summaries as { slug, title, date }}
+          <li>
+            <a id="other-titles" href="/events/{slug}">{title} - {date}</a>
+          </li>
+        {/each}
+      </ul>
+    </Section>
+  </aside>
 </div>
 
-<style>
-	@media (min-width: 640px) {
-		.layout {
-			display: grid;
-			gap: 2em;
-			grid-template-columns: 1fr 16em;
-		}
-	}
+<style lang="postcss">
+  .layout {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 30rem;
+  }
+  
+  #more-events {
+    @apply text-lg font-semibold;
+  }
+
+  #other-titles {
+	@apply decoration-clone cursor-pointer italic;
+  }  
+
+  
 </style>

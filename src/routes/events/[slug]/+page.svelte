@@ -1,9 +1,19 @@
 <script>
+	import Section from '$components/Section.svelte';
 	export let data;
 </script>
 
-<h1>{data.post.title}</h1>
-<div class='content'>{@html data.post.content}</div>
+<title>{data.post.title}</title>
+
+<Section>
+	<h1>{data.post.title}</h1>
+	<h2>
+		DATE: {data.post.date} - LOCATION: {data.post.location}
+	</h2>
+
+	<div class='content'>{@html data.post.content}</div>
+</Section>
+
 
 <style lang="postcss">
 	h1 {

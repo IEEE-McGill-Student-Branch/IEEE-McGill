@@ -33,20 +33,21 @@
   }
 
   nav ul li {
-    @apply float-left relative;
-    transition: all 0.2s ease-in-out;
+    @apply float-left relative w-44;
+    transition: all 0.1s linear;
   }
 
+  /* for the little arrow on top */
   nav ul li[aria-current='page']::before {
-    --size: 10px;
-		content: '';
-		width: 0;
-		height: 0;
-		position: absolute;
-		top: 0;
-		left: calc(50% - var(--size));
-		border: var(--size) solid transparent;
-		border-top: var(--size) solid #fff;
+    @apply w-0 h-0 absolute top-0;
+    content: '';
+		left: calc(50% - 0.5rem);
+		border: 0.5rem solid transparent;
+		border-top: 0.5rem solid #fff;
+  }
+
+  nav ul li[aria-current='page']{
+    @apply bg-rose-800 ;
   }
 
   nav ul li:hover {
