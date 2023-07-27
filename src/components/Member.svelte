@@ -6,9 +6,11 @@
     <p id="name">
       <slot name="name"/>
     </p>
+    <p id="pronouns">
     <slot name="pronouns">
       <span class="missing">N/A</span>
     </slot>
+  </p>
     <p id=role>
       <slot name="role">
         <span class="missing">Role?</span>
@@ -39,6 +41,10 @@
 
   #name {
     @apply text-3xl font-semibold font-sans;
+  }
+
+  #pronouns {
+    @apply text-xl;
   }
 
   #role {

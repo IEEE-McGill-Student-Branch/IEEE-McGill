@@ -7,7 +7,8 @@
 
 <title>IEEE McGill</title>
 <h1>
-  <img src={Logo} id=logo alt="IEEE McGill Emblem"/> IEEE McGill
+  <img src={Logo} id=logo alt="IEEE McGill Emblem"/> 
+  IEEE McGill
 </h1>
 <Section>
   McGill University IEEE (the Institute of Electrical and Electronics Engineers
