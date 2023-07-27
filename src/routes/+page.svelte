@@ -7,7 +7,7 @@
 
 <title>IEEE McGill</title>
 <h1>
-  <img src={Logo} alt="IEEE McGill Emblem" style="width: 5rem;" /> IEEE McGill
+  <img src={Logo} id=logo alt="IEEE McGill Emblem"/> IEEE McGill
 </h1>
 <Section>
   McGill University IEEE (the Institute of Electrical and Electronics Engineers
@@ -44,20 +44,16 @@
   Check out our <a class="link" href="/events">events page</a> for more information.
 </Section>
 
-<!-- <h2>Join our newsletter</h2>
-<Section>
-  <iframe
-    title="Newsletter"
-    src="https://docs.google.com/forms/d/e/1FAIpQLSfBLRxNxYmR7UxWEuJAscu5ZIueQRd3guV9stMVClLK3zghig/viewform?embedded=true"
-    >Loading…
-  </iframe>
-</Section> -->
-
 <Footer />
 
 <style lang="postcss">
+  #logo {
+    width: 6rem;
+    @apply p-2 inline;
+  }
+
   h1 {
-    font-size: 4rem;
+    font-size: 4em;
     text-align: center;
   }
 
@@ -68,15 +64,5 @@
 
   a {
     @apply font-semibold text-red-500 cursor-pointer;
-  }
-
-  iframe {
-    margin: auto;
-    display: block;
-    min-width: 75vw;
-    width: 100%;
-    height: 100vh;
-    padding: 0.5rem;
-    margin: 1rem auto;
   }
 </style>

@@ -1,5 +1,4 @@
 <script>
-  import { fade, draw, fly } from 'svelte/transition';
   import Member from "$components/Member.svelte";
   import Section from "$components/Section.svelte";
   import GroupPicture from "$images/IEEEexec-5293.png";

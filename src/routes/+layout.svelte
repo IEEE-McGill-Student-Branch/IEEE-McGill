@@ -6,10 +6,9 @@
 <style lang="postcss">
     /* Common style among pages for standardization */
     :global(body) {
-        font: 16px monospace;
-        margin: 0;
+        font: 16px;
         //padding: 0 10vh;
-        background-color: theme(colors.gray.100);
+        @apply ring-red-200 font-sans m-0;
         overflow: scroll;
     }
 </style>

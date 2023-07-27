@@ -23,8 +23,8 @@
 <style lang="postcss">
   /* Normal Desktop Settings */
   nav {
-    width: 100%;
     @apply bg-rose-600;
+    @apply rounded-lg m-3  focus:outline-none;
   }
 
   nav ul {
@@ -33,17 +33,16 @@
   }
 
   nav ul li {
-    @apply float-left relative w-44;
-    transition: all 0.1s linear;
+    @apply float-left relative w-44 transition-all;
   }
 
-  /* for the little arrow on top */
+  /* for the little arrow below */
   nav ul li[aria-current='page']::before {
-    @apply w-0 h-0 absolute top-0;
+    @apply w-0 h-0 absolute bottom-0;
     content: '';
 		left: calc(50% - 0.5rem);
 		border: 0.5rem solid transparent;
-		border-top: 0.5rem solid #fff;
+		border-bottom: 0.5rem solid #fff;
   }
 
   nav ul li[aria-current='page']{
@@ -61,7 +60,6 @@
 
   @media (max-width: 768px) {
     nav {
-      display: none;
     }
     nav ul {
       @apply flex-col;

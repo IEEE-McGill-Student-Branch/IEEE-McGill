@@ -12,19 +12,19 @@
   <h1>Event Posts</h1>
 
   <div id="eventPosts">
-    {#each data.summaries as { slug, title, shortDesc, date, location }}
-      <EventPost eventSlug={slug}>
+    {#each data.summaries as event}
+      <EventPost eventSlug={event.slug}>
         <div slot="thumbnail">
           <img
             src="https://images.unsplash.com/photo-1682686581663-179efad3cd2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-            alt="Event {title} thumbnail"
+            alt="Event {event.title} thumbnail"
           />
         </div>
-        <div slot="title">{title}</div>
-        <div slot=date>{date}</div>
-        <div slot=location>{location}</div>
+        <div slot="title">{event.title}</div>
+        <div slot=date>{event.date}</div>
+        <div slot=location>{event.location}</div>
         <div slot="shortDescription">
-          {@html shortDesc}
+          {@html event.shortDesc}
         </div>
       </EventPost>
     {/each}
