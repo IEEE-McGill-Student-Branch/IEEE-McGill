@@ -49,13 +49,11 @@
 
 <style lang="postcss">
   #logo {
-    width: 6rem;
-    @apply p-2 inline;
+    @apply inline w-20;
   }
 
   h1 {
-    font-size: 4em;
-    text-align: center;
+    @apply m-0 border-0 p-0 text-center text-6xl;
   }
 
   h2 {

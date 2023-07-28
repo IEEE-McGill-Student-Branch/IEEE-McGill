@@ -1,10 +1,13 @@
-<script lang="ts">
+<script>
   import { page } from "$app/stores";
+  import Logo from '$images/small_logo.png';
 </script>
 
-<nav class="">
-  <!-- <img src={Logo} alt="Logo" width="50px" /> -->
+<nav>
   <ul>
+    <!-- <li id=logo>IEEE McGill</li> -->
+    <!-- <img id="logo" src={Logo} alt="Logo"/> -->
+
     <li aria-current={$page.url.pathname === "/" ? "page" : undefined}>
       <a href="/">Home</a>
     </li>
@@ -32,8 +35,12 @@
     @apply justify-evenly;
   }
 
+  /* nav ul:first-child{
+    @apply m-auto;
+  } */
+
   nav ul li {
-    @apply float-left relative w-44 transition-all;
+    @apply float-left relative w-48 transition-all;
   }
 
   /* for the little arrow below */
@@ -46,7 +53,7 @@
   }
 
   nav ul li[aria-current='page']{
-    @apply bg-rose-800 ;
+    @apply bg-rose-800;
   }
 
   nav ul li:hover {
@@ -54,9 +61,12 @@
   }
 
   nav ul li a {
-    margin: 0 1rem;
     @apply text-2xl p-4 block text-center font-bold text-white;
   }
+
+  /* #logo {
+    @apply rounded-lg bg-red-700; 
+  } */
 
   @media (max-width: 768px) {
     nav {
