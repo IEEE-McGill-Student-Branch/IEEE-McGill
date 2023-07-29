@@ -27,7 +27,7 @@
   .layout {
     display: grid;
     gap: 1em;
-    grid-template-columns: 1fr 30rem;
+    grid-template-columns: 2fr 1fr;
   }
   
   #more-events {

@@ -33,7 +33,7 @@
       li {
         @apply float-left relative w-48 transition-all;
         :hover {
-          @apply bg-rose-950 text-slate-800 shadow-lg cursor-pointer;
+          @apply bg-rose-800 shadow-lg cursor-pointer;
         }
         a {
           @apply text-2xl p-4 block text-center font-bold text-white;
@@ -42,7 +42,7 @@
 
       /* for the little arrow below */
       li[aria-current="page"] {
-        @apply bg-rose-800 rounded-md;
+        @apply bg-rose-700 rounded-md;
 
         ::before {
           @apply w-0 h-0 absolute bottom-0;
