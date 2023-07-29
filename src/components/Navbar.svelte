@@ -32,7 +32,9 @@
 
       li {
         @apply float-left relative w-48 transition-all;
-
+        :hover {
+          @apply bg-rose-950 text-slate-800 shadow-lg cursor-pointer;
+        }
         a {
           @apply text-2xl p-4 block text-center font-bold text-white;
         }
@@ -48,9 +50,6 @@
           left: calc(50% - 0.5rem);
           border: 0.5rem solid transparent;
           border-bottom: 0.5rem solid #fff;
-        }
-        :hover {
-          @apply bg-rose-950 text-slate-800 shadow-lg cursor-pointer;
         }
       }
     }
