@@ -1,6 +1,6 @@
 <script>
   import { page } from "$app/stores";
-  import Logo from '$images/small_logo.png';
+  import Logo from "$images/small_logo.png";
 </script>
 
 <nav>
@@ -24,51 +24,47 @@
 </nav>
 
 <style lang="postcss">
-  /* Normal Desktop Settings */
   nav {
-    @apply bg-rose-600;
-    @apply rounded-lg m-3  focus:outline-none;
-  }
+    @apply bg-rose-600 rounded-lg m-3;
 
-  nav ul {
-    @apply list-none overflow-hidden flex items-center gap-3;
-    @apply justify-evenly;
+    ul {
+      @apply list-none overflow-hidden flex items-center gap-3 justify-evenly;
+
+      li {
+        @apply float-left relative w-48 transition-all;
+
+        a {
+          @apply text-2xl p-4 block text-center font-bold text-white;
+        }
+      }
+
+      /* for the little arrow below */
+      li[aria-current="page"] {
+        @apply bg-rose-800 rounded-md;
+
+        ::before {
+          @apply w-0 h-0 absolute bottom-0;
+          content: "";
+          left: calc(50% - 0.5rem);
+          border: 0.5rem solid transparent;
+          border-bottom: 0.5rem solid #fff;
+        }
+        :hover {
+          @apply bg-rose-950 text-slate-800 shadow-lg cursor-pointer;
+        }
+      }
+    }
   }
 
   /* nav ul:first-child{
-    @apply m-auto;
+    @apply lg:m-auto;
   } */
-
-  nav ul li {
-    @apply float-left relative w-48 transition-all;
-  }
-
-  /* for the little arrow below */
-  nav ul li[aria-current='page']::before {
-    @apply w-0 h-0 absolute bottom-0;
-    content: '';
-		left: calc(50% - 0.5rem);
-		border: 0.5rem solid transparent;
-		border-bottom: 0.5rem solid #fff;
-  }
-
-  nav ul li[aria-current='page']{
-    @apply bg-rose-800;
-  }
-
-  nav ul li:hover {
-    @apply bg-rose-950 text-slate-800 shadow-lg cursor-pointer;
-  }
-
-  nav ul li a {
-    @apply text-2xl p-4 block text-center font-bold text-white;
-  }
 
   /* #logo {
     @apply rounded-lg bg-red-700; 
   } */
 
-  @media (max-width: 768px) {
+  /* ?@media  {
     nav {
     }
     nav ul {
@@ -80,5 +76,5 @@
     nav ul li {
       @apply text-2xl;
     }
-  }
+  } */
 </style>

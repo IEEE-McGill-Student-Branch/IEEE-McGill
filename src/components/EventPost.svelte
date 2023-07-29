@@ -36,16 +36,14 @@
     }
 
     article {
-        @apply p-4 m-6 w-96 bg-blue-50;
+        @apply p-4 m-6 max-w-sm bg-neutral-50;
         @apply border-4 border-gray-300;
-        @apply rounded-md;
-        @apply shadow-md;
+        @apply rounded-md shadow-md;
+        @apply overflow-hidden;
+        /* When an event post is hovered over */
+        @apply hover:border-rose-300 hover:shadow-lg hover:cursor-pointer;
     }
 
-    article:hover {
-      @apply border-blue-500 cursor-pointer shadow-lg;
-    }
-    
     h2 {
         @apply text-2xl;
         @apply font-bold;
@@ -53,11 +51,11 @@
     }
     
     p {
-        @apply text-gray-700 text-justify;
+        @apply text-lg text-gray-700 text-justify;
         @apply mb-4;
     }
 
     .img {
-        @apply m-4 h-64 object-cover object-center;
+        @apply m-5 object-cover object-center;
     }
 </style>
