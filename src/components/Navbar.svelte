@@ -6,7 +6,12 @@
 <nav>
   <ul>
     <!-- <li id=logo>IEEE McGill</li> -->
-    <!-- <img id="logo" src={Logo} alt="Logo"/> -->
+    <!-- <li id="logo">
+      <p>
+        <img src={Logo} alt="Logo"/>
+      IEEE McGill
+      </p>
+    </li> -->
 
     <li aria-current={$page.url.pathname === "/" ? "page" : undefined}>
       <a href="/">Home</a>
@@ -20,6 +25,9 @@
     <li aria-current={$page.url.pathname === "/members" ? "page" : undefined}>
       <a href="/members">Members</a>
     </li>
+    <li aria-current={$page.url.pathname === "/contact" ? "page" : undefined}>
+      <a href="/contact">Contact</a>
+    </li>
   </ul>
 </nav>
 
@@ -27,14 +35,21 @@
   nav {
     @apply bg-rose-600 rounded-lg m-3;
 
+    /* #logo {
+      @apply w-10 inline;
+    } */
+
     ul {
-      @apply list-none overflow-hidden flex items-center gap-3 justify-evenly;
+      @apply list-none overflow-hidden flex items-center gap-2 justify-center;
 
       li {
-        @apply float-left relative w-48 transition-all;
+        @apply float-left relative w-48 rounded-lg;
+        
         :hover {
-          @apply bg-rose-800 shadow-lg cursor-pointer;
+          transition: all 200ms ease-in-out;
+          @apply bg-rose-900 shadow-lg rounded-lg cursor-pointer;
         }
+
         a {
           @apply text-2xl p-4 block text-center font-bold text-white;
         }
@@ -55,25 +70,5 @@
     }
   }
 
-  /* nav ul:first-child{
-    @apply lg:m-auto;
-  } */
-
-  /* #logo {
-    @apply rounded-lg bg-red-700; 
-  } */
-
-  /* ?@media  {
-    nav {
-    }
-    nav ul {
-      @apply flex-col;
-      @apply items-center;
-      @apply gap-2;
-    }
-
-    nav ul li {
-      @apply text-2xl;
-    }
-  } */
+  
 </style>
