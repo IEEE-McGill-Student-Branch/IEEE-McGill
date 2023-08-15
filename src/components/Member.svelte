@@ -26,8 +26,8 @@
 
   .member {
     @apply flex flex-col items-center;
-    width: 30rem;
-    height: 36rem;
+    width: 20rem;
+    /* height: 36rem; */
     border: #da5555af 5px solid;
     border-radius: 13px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
@@ -40,15 +40,15 @@
   }
 
   #name {
-    @apply text-3xl font-semibold font-sans;
+    @apply text-xl font-semibold font-sans;
   }
 
   #pronouns {
-    @apply text-xl;
+    @apply text-base;
   }
 
   #role {
-    @apply text-2xl;
+    @apply text-lg;
   }
   .missing {
     color: #999;

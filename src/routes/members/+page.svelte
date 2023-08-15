@@ -45,7 +45,7 @@
   }
 
   #profilepic {
-    width: 27rem;
+    width: 24rem;
     @apply shadow-gray-500 drop-shadow-lg py-2;
   }
 </style>
