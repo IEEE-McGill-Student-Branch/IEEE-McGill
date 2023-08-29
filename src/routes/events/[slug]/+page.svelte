@@ -11,7 +11,7 @@
     DATE: {data.post.date} - LOCATION: {data.post.location}
   </h2>
 
-  <div class="content">{@html data.post.content}</div>
+  <div class="content">{@html data.postContent}</div>
 </Section>
 
 <style lang="postcss">

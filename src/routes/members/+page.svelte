@@ -7,7 +7,7 @@
 
 <title>Meet the team!</title>
 
-  <h1>Meet the team!</h1>
+<h1>Meet the team!</h1>
 <Section>
   <div class="memberDiv">
     {#each data.members as member}

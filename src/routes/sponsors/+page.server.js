@@ -1,4 +1,4 @@
-import { sponsors } from '$lib/sponsors';
+import { sponsors } from '$lib/sponsors.js';
 
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
