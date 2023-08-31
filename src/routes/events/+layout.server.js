@@ -6,6 +6,7 @@ export function load() {
 			slug: post.slug,
 			title: post.title,
 			date: post.date,
+			background: post.background,
 			location: post.location,
 			shortDesc: post.shortDescription
 		}))

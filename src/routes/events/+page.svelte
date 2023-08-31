@@ -16,7 +16,7 @@
       <EventPost eventSlug={event.slug}>
         <div slot="thumbnail">
           <img
-            src="https://images.unsplash.com/photo-1682686581663-179efad3cd2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            src={event.background}
             alt="Event {event.title} thumbnail"
           />
         </div>
@@ -32,9 +32,9 @@
 </Section>
 
 <!-- Event Calendar -->
-<Section>
+<!-- <Section>
   <h2>Events Calendar</h2>
-  <!-- Advanced Atrributes: https://support.google.com/calendar/thread/23205641/advanced-embed-option-descriptions?hl=en -->
+  Advanced Atrributes: https://support.google.com/calendar/thread/23205641/advanced-embed-option-descriptions?hl=en
   <iframe
     title="IEEE McGill Calendar"
     src="https://calendar.google.com/calendar/embed?
@@ -58,15 +58,14 @@
     scrolling="yes"
     id="calendar"
   />
-</Section>
+</Section> -->
 
 <style lang="postcss">
-  h1,
-  h2 {
+  h1 {
     @apply text-2xl text-center font-semibold px-4;
   }
 
-  #calendar {
+  /* #calendar {
     text-align: center;
     size: 100px;
     margin: auto;
@@ -77,9 +76,13 @@
     min-width: 90%;
     padding: 0.5rem;
     margin: 1rem auto;
-  }
+  } */
 
   #eventPosts {
-    @apply flex flex-wrap justify-center p-3;
+    @apply p-5 flex flex-wrap justify-center lg:p-3 gap-8;
+
+    img {
+      @apply h-36 p-4 min-w-fit;
+    }
   }
 </style>

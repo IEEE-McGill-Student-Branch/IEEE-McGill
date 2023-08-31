@@ -35,11 +35,9 @@
       <li aria-current={$page.url.pathname === "/events" ? "page" : undefined}>
         <a href="/events">Events</a>
       </li>
-      <li
-        aria-current={$page.url.pathname === "/sponsors" ? "page" : undefined}
-      >
+      <!-- <li aria-current={$page.url.pathname === "/sponsors" ? "page" : undefined}>
         <a href="/sponsors">Sponsors</a>
-      </li>
+      </li> -->
       <li aria-current={$page.url.pathname === "/members" ? "page" : undefined}>
         <a href="/members">Members</a>
       </li>
@@ -49,7 +47,7 @@
 
 <style lang="postcss">
   nav {
-    @apply bg-blue-800 rounded-lg m-3;
+    @apply bg-rose-700 rounded-lg m-3;
 
     #navContent {
       @apply hidden w-full lg:block lg:w-auto;
@@ -78,7 +76,7 @@
 
       /* for the little arrow below */
       li[aria-current="page"] {
-        @apply bg-rose-700 rounded-md;
+        @apply bg-rose-800 rounded-md;
 
         ::before {
           @apply w-0 h-0 absolute bottom-0;

@@ -24,7 +24,7 @@
 
   <p>
     <slot name="shortDescription">
-      <em>No short description :(</em>
+      <em>Empty description</em>
     </slot>
   </p>
 </a>
@@ -36,12 +36,13 @@
     }
 
     article {
-        @apply p-4 m-6 max-w-sm bg-neutral-50;
+        @apply px-3 m-1 max-w-sm bg-neutral-50 lg:m-6;
         @apply border-4 border-gray-300;
         @apply rounded-md shadow-md;
         @apply overflow-hidden;
         /* When an event post is hovered over */
         @apply hover:border-rose-300 hover:shadow-lg hover:cursor-pointer;
+        @apply flex items-center justify-center;
     }
 
     h2 {
@@ -56,6 +57,6 @@
     }
 
     .img {
-        @apply m-5 object-cover object-center;
+        @apply flex justify-center m-6 object-cover object-center h-24 items-center;
     }
 </style>
