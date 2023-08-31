@@ -1,5 +1,6 @@
 <script>
     import Navbar from "$components/Navbar.svelte";
+    import TempNav from "$components/TempNav.svelte";
     import Footer from "$components/Footer.svelte";
     import "../app.css";
 </script>
@@ -14,6 +15,7 @@
     }
 </style>
 <Navbar/>
+<!-- <TempNav/> -->
 <slot/>
 <Footer/>
 
