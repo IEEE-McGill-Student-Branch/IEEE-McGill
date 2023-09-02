@@ -47,7 +47,7 @@
 
 <style lang="postcss">
   nav {
-    @apply bg-rose-700 rounded-lg m-3;
+    @apply bg-rose-600 rounded-lg m-3;
 
     #navContent {
       @apply hidden w-full lg:block lg:w-auto;
@@ -76,14 +76,16 @@
 
       /* for the little arrow below */
       li[aria-current="page"] {
-        @apply bg-rose-800 rounded-md;
+        @apply bg-rose-700 rounded-md;
 
-        ::before {
-          @apply w-0 h-0 absolute bottom-0;
-          content: "";
-          left: calc(50% - 0.5rem);
-          border: 0.5rem solid transparent;
-          border-bottom: 0.5rem solid #fff;
+        @media (min-width: 1024px) {
+          ::before {
+            @apply w-0 h-0 absolute bottom-0;
+            content: "";
+            left: calc(50% - 0.5rem);
+            border: 0.5rem solid transparent;
+            border-bottom: 0.5rem solid #fff;
+          }
         }
       }
     }

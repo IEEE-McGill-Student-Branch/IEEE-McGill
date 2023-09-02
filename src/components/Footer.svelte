@@ -40,7 +40,7 @@
 <style lang="postcss">
   footer {
     @apply flex flex-col items-center justify-center;
-    @apply bg-rose-700;
+    @apply bg-rose-600;
     @apply rounded-lg m-3 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none;
     @apply py-4;
   }

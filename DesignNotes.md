@@ -71,3 +71,11 @@ const config = {
 #### Responsive Styling
 - TailwindCSS core concept on responsive styling is mobile-first. This means that the default styling is for mobile, and you add classes to style for larger screens.
 
+#### Events Thumbnail
+- This should be included in the wiki of the page. 
+- Items can be found in [/src/images/events](/src/images/events). Simply import them to the post.js file and add them to the `events` array.
+- When designing, I follow the following format, for ease of dealing with responsive design IMO: 
+  - Square
+  - Min width: 300px
+  - Background color: white
+
