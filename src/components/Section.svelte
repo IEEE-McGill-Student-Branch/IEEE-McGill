@@ -7,7 +7,7 @@
 <style lang="postcss">
 	.section {
         @apply text-lg p-4 bg-white shadow-md m-4 text-justify;
-		border: 1px solid #ed5d5d82;
-		border-radius: 2px;
+		@apply border-2 border-solid border-rose-400 rounded-lg;
+		@apply dark:bg-gray-800 dark:border-gray-500;
 	}
 </style>

@@ -7,7 +7,7 @@
 <title>IEEE McGill</title>
 <h1>
   <img src={Logo} id=logo alt="IEEE McGill Emblem"/> 
-  IEEE McGill
+  IEEE McGill Student Branch
 </h1>
 <div id='content'>
   <Section>
@@ -40,20 +40,20 @@
     discounts, awards and recognition.
   </Section>
   
-  <h2>Upcoming Events</h2>
+  <!-- <h2>Upcoming Events</h2>
   <Section>
     Check out our <a class="link" href="/events">events page</a> for more information.
-  </Section>
+  </Section> -->
   
 </div>
 
 <style lang="postcss">
   #logo {
-    @apply inline w-20;
+    @apply inline w-12;
   }
 
   h1 {
-    @apply m-0 border-0 p-0 text-center text-6xl;
+    @apply m-0 border-0 p-0 text-center text-3xl;
   }
 
   h2 {
@@ -61,7 +61,7 @@
     text-align: center;
   }
 
-  a {
+  /* a {
     @apply font-semibold text-red-500 cursor-pointer;
-  }
+  } */
 </style>

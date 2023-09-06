@@ -4,14 +4,14 @@
 </script>
 
 <div class="layout">
-  <main>
+  <main class="lg:col-span-2">
     <slot />
   </main>
 
   <aside>
     <Section>
       <h2 id="more-events">More Events</h2>
-      ------------
+      ------
       <ul>
         {#each data.summaries as { slug, title, date }}
           <li>
@@ -25,17 +25,16 @@
 
 <style lang="postcss">
   .layout {
-    display: grid;
-    gap: 1em;
-    grid-template-columns: 2fr 1fr;
+    @apply grid grid-rows-2;
+    @apply lg:grid-cols-3;
   }
   
   #more-events {
-    @apply text-lg font-semibold;
+    @apply text-xl font-semibold;
   }
 
   #other-titles {
-	@apply decoration-clone cursor-pointer italic;
+	@apply decoration-clone cursor-pointer text-xl;
   }  
 
   

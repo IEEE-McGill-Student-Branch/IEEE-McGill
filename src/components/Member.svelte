@@ -38,8 +38,8 @@
 
   .member {
     @apply flex flex-col items-center;
-    @apply rounded-md w-96 p-4 m-4;
-    @apply border-x-2 border-x-rose-300 border-y-4 border-y-rose-500;
+    @apply rounded-md w-80 lg:w-96 p-4 m-4;
+    @apply border-4 border-rose-400;
     @apply shadow-lg;
   }
 
@@ -61,6 +61,7 @@
 
   #email {
     @apply text-rose-700 underline;
+    @apply dark:text-rose-300;
   }
 
   .missing {
