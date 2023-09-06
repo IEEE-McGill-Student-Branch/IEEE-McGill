@@ -25,6 +25,7 @@
 ### Styling
 - Please install TailwindCSS IntelliSense extension for VSCode and disable GitHub Copilot (or any AI co-pilot) while using it. It gives you the TailwindCSS classes as you type, which is very helpful.
 - Each element uses `@apply` to apply TailwindCSS  classes. I avoid adding classes or style tag to the element itself because it's not as clean and easy to read.
+- The project moved to Flowbite-Svelte for styling thanks to its large component library and ease of use.
 
 #### Nesting Syntax
 - One of my favorite feature of SCSS is nesting syntax. In TailwindCSS, here is what you have to do:
