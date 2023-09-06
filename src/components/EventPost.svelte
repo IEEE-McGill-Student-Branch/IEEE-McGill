@@ -5,8 +5,8 @@
   export let eventSlug;
 </script>
 
+<a href="/events/{eventSlug}">
 <article id={eventSlug}>
-  <a href="/events/{eventSlug}">
     <div class="img">
       <slot name="thumbnail" />
     </div>
@@ -18,8 +18,7 @@
     </h2>
 
     <p>
-      <slot name="date" />
-      <slot name="location" />
+      <slot name="date"/> <slot name="location"/>
     </p>
 
     <p>
@@ -27,8 +26,8 @@
         <em>Empty description</em>
       </slot>
     </p>
-  </a>
-</article>
+  </article>
+</a>
 
 <style lang="postcss">
   * {
@@ -36,13 +35,14 @@
   }
 
   article {
-    @apply px-3 m-1 max-w-sm bg-white lg:p-6 lg:m-6;
+    @apply px-3 m-2 bg-white w-96 h-96;
+    @apply flex flex-col place-content-evenly items-center;
+    @apply lg:grid lg:p-6 lg:m-6; 
     @apply border-4 border-gray-300;
     @apply rounded-lg shadow-md;
     @apply overflow-hidden;
     /* When an event post is hovered over */
     @apply hover:border-rose-300 hover:shadow-lg hover:cursor-pointer;
-    @apply flex items-center justify-center;
   }
 
   h2 {

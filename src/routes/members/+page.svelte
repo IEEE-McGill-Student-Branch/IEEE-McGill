@@ -11,7 +11,7 @@
 <Section>
   <div class="memberDiv">
     {#each data.members as member}
-      <Member>
+      <Member email={member.email}>
         <div slot="profilepic">
           <img
             id="profilepic"
@@ -22,10 +22,11 @@
         <div slot="name">{member.name}</div>
         <div slot="pronouns">{member.pronouns}</div>
         <div slot="role">{member.role}</div>
+        <div slot="email">{member.email}</div>
       </Member>
     {/each}
   </div>
-  <img src={GroupPicture} alt="IEEE group"/>
+  <img src={GroupPicture} alt="IEEE group" id="groupPic"/>
 
 </Section>
 
@@ -41,11 +42,16 @@
   }
 
   .memberDiv {
-    @apply flex flex-wrap justify-center p-4;
+    @apply flex flex-wrap justify-center m-0;
   }
 
   #profilepic {
     width: 24rem;
     @apply shadow-gray-500 drop-shadow-lg py-2;
+  }
+
+  #groupPic {
+    @apply border-4 border-spacing-1 rounded-lg;
+    border: #da5555af 5px solid;
   }
 </style>

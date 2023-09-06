@@ -1,33 +1,25 @@
 <script>
   import { page } from "$app/stores";
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
+  import IEEELogo from '$images/small_logo.png';
 </script>
 
-<nav>
+<Navbar let:hidden let:toggle class="bg-rose-600 rounded-lg m-3 w-auto">
+  <NavBrand href="/">
+    <img src={IEEELogo} class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+    <span class="self-center whitespace-nowrap text-xl font-semibold dark:text-white">IEEE McGill</span>
+  </NavBrand>
+  <NavHamburger on:click={toggle} />
+  <NavUl {hidden}>
+    <NavLi href="/" aria-current={$page.url.pathname === "/" ? "page" : undefined}>Home</NavLi>
+    <NavLi href="/events">Events</NavLi>
+    <NavLi href="/members">Members</NavLi>
+  </NavUl>
+</Navbar>
+
+<!-- <nav>
   <ul>
     <li id="webTitle"><p>IEEE McGill</p></li>
-    <button
-      data-collapse-toggle="navbar-default"
-      type="button"
-      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden hover:bg-gray-200 ring-gray-200 text-white"
-      aria-controls="navbar-default"
-      aria-expanded="false"
-    >
-      <svg
-        class="w-5 h-5"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 15 14"
-      >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M1 1h15M1 7h15M1 13h15"
-        />
-      </svg>
-    </button>
     <div id="navContent">
       <li aria-current={$page.url.pathname === "/" ? "page" : undefined}>
         <a href="/">Home</a>
@@ -35,27 +27,29 @@
       <li aria-current={$page.url.pathname === "/events" ? "page" : undefined}>
         <a href="/events">Events</a>
       </li>
-      <!-- <li aria-current={$page.url.pathname === "/sponsors" ? "page" : undefined}>
+      <li aria-current={$page.url.pathname === "/sponsors" ? "page" : undefined}>
         <a href="/sponsors">Sponsors</a>
-      </li> -->
+      </li>
       <li aria-current={$page.url.pathname === "/members" ? "page" : undefined}>
         <a href="/members">Members</a>
       </li>
+      <li aria-current={$page.url.pathname === "/contacts" ? "page" : undefined}>
+        <a href="/contacts">Contact Us</a>
+      </li>
     </div>
   </ul>
-</nav>
+</nav> -->
 
 <style lang="postcss">
-  nav {
-    @apply bg-rose-600 rounded-lg m-3;
+  /* nav {
 
     #navContent {
-      @apply hidden w-full lg:block lg:w-auto;
+      @apply hidden w-full md:block md:w-auto;
     }
 
     ul {
       #webTitle {
-        @apply block lg:hidden;
+        @apply block md:hidden;
       }
 
       @apply overflow-hidden flex items-center gap-2 justify-center;
@@ -74,7 +68,7 @@
         }
       }
 
-      /* for the little arrow below */
+      // for the little arrow below
       li[aria-current="page"] {
         @apply bg-rose-700 rounded-md;
 
@@ -89,5 +83,5 @@
         }
       }
     }
-  }
+  } */
 </style>
