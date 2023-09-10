@@ -9,6 +9,8 @@
 
 <h1>Meet the team!</h1>
 <Section>
+  <img src={GroupPicture} alt="IEEE group" id="groupPic"/>
+
   <div class="memberDiv">
     {#each data.members as member}
       <Member email={member.email}>
@@ -26,8 +28,6 @@
       </Member>
     {/each}
   </div>
-  <img src={GroupPicture} alt="IEEE group" id="groupPic"/>
-
 </Section>
 
 <!-- CONTACT PAGE -->
@@ -46,7 +46,7 @@
   }
 
   #profilepic {
-    width: 24rem;
+    width: min(24rem, 100vw);
     @apply shadow-gray-500 drop-shadow-lg py-2;
   }
 

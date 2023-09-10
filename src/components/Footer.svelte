@@ -12,15 +12,17 @@
 
 <Footer footerType="socialmedia">
   <div>
-    <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+    <div class="grid grid-cols-2 gap-6">
+      <!-- RESOURCE SECTION -->
       <div>
-        <!-- RESOURCE SECTION -->
         <h2
-          class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
+          class="mb-3 text-sm font-semibold text-gray-900 uppercase dark:text-white"
         >
-          Resources
-        </h2>
-        <FooterLinkGroup>
+        
+        Resources
+      </h2>
+      <hr class="my-2 border-gray-100 sm:mx-auto dark:border-gray-700" />
+        <FooterLinkGroup class="grid md:grid-cols-3">
           <FooterLink liClass="mb-4" href="/events">Upcoming Events</FooterLink>
           <FooterLink
             liClass="mb-4"
@@ -33,11 +35,13 @@
       <!-- SOCIAL MEDIA SECTION -->
       <div>
         <h2
-          class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white"
+          class="mb-3 text-sm font-semibold uppercase text-gray-900 dark:text-white"
         >
           Follow us
         </h2>
-        <FooterLinkGroup>
+        <hr class="my-2 border-gray-100 sm:mx-auto dark:border-gray-700" />
+
+        <FooterLinkGroup class="grid md:grid-cols-3">
           <FooterLink
             liClass="mb-4"
             href="https://www.instagram.com/ieeemcgill/"
@@ -57,9 +61,13 @@
       </div>
     </div>
   </div>
-  <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-  <div class="sm:flex sm:items-center sm:justify-between">
-    <FooterCopyright by="IEEE McGill Student Branch." year={2023}/>
-    <DarkMode btnClass={darkModeClasses}/>
+  <hr class="my-2 border-gray-300 sm:mx-auto dark:border-gray-700" />
+  <div class="grid grid-cols-4">
+    <div class="col-span-3 self-center justify-self-start	">
+      <FooterCopyright by="IEEE McGill SB." year={2023} copyrightMessage={"All Rights Reserved."}/>
+    </div>
+    <div class="text-center">
+      <DarkMode btnClass={darkModeClasses}/>
+    </div>
   </div>
 </Footer>

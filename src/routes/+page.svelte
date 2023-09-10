@@ -2,66 +2,78 @@
   import Logo from "$images/small_logo.png";
   import Section from "$components/Section.svelte";
   import "../app.css";
+  import IEEE from "$images/IEEE-blue.png";
 </script>
 
 <title>IEEE McGill</title>
-<h1>
-  <img src={Logo} id=logo alt="IEEE McGill Emblem"/> 
-  IEEE McGill Student Branch
-</h1>
-<div id='content'>
-  <Section>
-    McGill University IEEE (the Institute of Electrical and Electronics Engineers
-    Inc.) Student Branch is dedicated to the development of professional skills of
-    electrical & computer engineering as well as computer science students. IEEE
-    is the world’s leading professional not-for-profit association for the
-    advancement of technology.
-  </Section>
-  
-  <h2>About IEEE McGill Student Branch</h2>
-  <Section>
-    McGill University IEEE (the Institute of Electrical and Electronics Engineers
-    Inc.) student branch was established in April 1968 and currently has over 260
-    members, one of the largest IEEE student branches in Eastern Canada. The IEEE
-    student branch at McGill is dedicated to the development of professional
-    skills of electrical & computer engineering as well as computer science
-    students. IEEE and its members inspire a global community to innovate for a
-    better tomorrow through its more than 400,000 members in more than 160
-    countries, and its highly cited publications, conferences, technology
-    standards, and professional and educational activities. IEEE is the trusted
-    “voice” for engineering, computing, and technology information around the
-    globe.
-    <br /><br />
-    We are a group of undergraduate and graduate electrical & computer engineering
-    students who want to have fun, make friends, meet new people and learn about research
-    and new innovations.
-    <br /><br />
-    We offer a convivial platform for networking, volunteerism, soft skills and leadership,
-    discounts, awards and recognition.
-  </Section>
-  
-  <!-- <h2>Upcoming Events</h2>
-  <Section>
-    Check out our <a class="link" href="/events">events page</a> for more information.
-  </Section> -->
-  
+
+<div id="content">
+  <div id="introduction">
+    <h1>
+      <img src={Logo} id="logo" alt="IEEE McGill Emblem" />
+      IEEE McGill Student Branch
+    </h1>
+  </div>
+  <div id="paragraph">
+    <Section>
+      IEEE McGill Student Branch is a group of undergraduate and graduate
+      electrical & computer engineering students who want to have fun, make
+      friends, meet new people and learn about research and new innovations. We
+      offer a convivial platform for networking, volunteerism, soft skills and
+      leadership, discounts, awards and recognition.
+
+      <br />
+      <br />
+
+      McGill University IEEE student branch was established in April 1968 and
+      currently has over 260 members, one of the largest branches in Eastern
+      Canada. We are dedicated to the development of professional skills of
+      electrical & computer engineering as well as computer science students.
+      IEEE and its members inspire a global community to innovate for a better
+      tomorrow through its more than 400,000 members in more than 160 countries,
+      and its highly cited publications, conferences, technology standards, and
+      professional and educational activities. IEEE is the trusted “voice” for
+      engineering, computing, and technology information around the globe.
+      <br />
+    </Section>
+  </div>
 </div>
+
+<!-- <h1>Affiliations</h1>
+<div id="affiliation">
+  <Section>
+    <div class="grid grid-cols-3 items-center">
+      <img src={IEEE} alt="IEEE Blue Logo" id="IEEE" />
+      <span class="col-span-2">
+        IEEE (the Institute of Electrical and Electronics Engineers) is the
+        world's leading professional not-for-profit association for the
+        advancement of technology.
+      </span>
+    </div>
+  </Section>
+</div> -->
 
 <style lang="postcss">
   #logo {
-    @apply inline w-12;
+    @apply inline w-20 mx-3;
   }
 
   h1 {
-    @apply m-0 border-0 p-0 text-center text-3xl;
+    @apply border-0 p-3 my-2 text-center text-3xl;
   }
 
-  h2 {
-    @apply text-2xl justify-between px-4 py-2;
-    text-align: center;
-  }
+  #content {
+    #introduction {
+      @media screen md {
+        @apply grid grid-cols-2 items-center;
+      }
+    }
 
-  /* a {
-    @apply font-semibold text-red-500 cursor-pointer;
+    #paragraph {
+      @apply text-left;
+    }
+  }
+  /* #IEEE {
+    @apply w-48;
   } */
 </style>
