@@ -1,5 +1,8 @@
 <script>
   import Section from "$components/Section.svelte";
+  import style from "$lib/markdown.css?inline";
+  const stylesheet = `<style> + ${style} + </style>`
+
   export let data;
 </script>
 
@@ -11,7 +14,10 @@
     DATE: {data.post.date} - LOCATION: {data.post.location}
   </h2>
 
-  <div class="content">{@html data.postContent}</div>
+  <div class="content">
+    {@html stylesheet}
+    {@html data.postContent}
+  </div>
 </Section>
 
 <style lang="postcss">

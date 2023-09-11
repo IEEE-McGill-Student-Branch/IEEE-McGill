@@ -28,6 +28,6 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-static": "^2.0.2",
-		"markdown-it": "^13.0.1"
+		"marked": "^9.0.0"
 	}
 }

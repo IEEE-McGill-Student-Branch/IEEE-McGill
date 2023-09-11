@@ -29,7 +29,7 @@
             href="https://docs.google.com/forms/d/e/1FAIpQLSfBLRxNxYmR7UxWEuJAscu5ZIueQRd3guV9stMVClLK3zghig/viewform"
             target="_blank">Our newsletter</FooterLink
           >
-          <FooterLink liClass="mb-4" href="/sponsors">Our Sponsors</FooterLink>
+          <FooterLink liClass="mb-4" href="/faq">FAQs</FooterLink>
         </FooterLinkGroup>
       </div>
       <!-- SOCIAL MEDIA SECTION -->

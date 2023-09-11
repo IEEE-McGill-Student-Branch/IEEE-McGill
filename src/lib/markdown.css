@@ -1,0 +1,25 @@
+/* Styling to markdown components of the post */
+.content {
+  @apply p-4 m-2;
+  margin-left: 40px;
+  padding-left: 0;
+
+
+  h2 {
+    @apply font-bold text-2xl bg-blue-400;
+  }
+  p {
+    @apply font-sans text-lg text-yellow-900;
+  }
+  code {
+    @apply font-mono text-sm text-green-900;
+  }
+  ul {
+    @apply list-disc indent-4;
+    li {
+      margin-left: 0;
+      padding-left: 0;
+        @apply list-item;
+    }
+  }
+}
