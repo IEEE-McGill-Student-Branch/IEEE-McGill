@@ -1,6 +1,6 @@
 <script>
   import Section from "$components/Section.svelte";
-  import { AccordionItem, Accordion, Button } from "flowbite-svelte";
+  import { AccordionItem, Accordion } from "flowbite-svelte";
 </script>
 
 <head>
@@ -35,7 +35,7 @@
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSfBLRxNxYmR7UxWEuJAscu5ZIueQRd3guV9stMVClLK3zghig/viewform"
           target="_blank"
-          class="underline text-rose-800"
+          class="underline text-rose-800 dark:text-rose-300"
         >
           our newsletter
         </a>

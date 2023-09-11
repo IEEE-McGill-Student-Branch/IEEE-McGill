@@ -1,25 +1,23 @@
 /* Styling to markdown components of the post */
 .content {
   @apply p-4 m-2;
-  margin-left: 40px;
-  padding-left: 0;
-
+  @apply dark:text-white;
 
   h2 {
-    @apply font-bold text-2xl bg-blue-400;
+    @apply font-bold text-2xl;
   }
   p {
-    @apply font-sans text-lg text-yellow-900;
+    @apply font-sans text-lg;
   }
   code {
     @apply font-mono text-sm text-green-900;
   }
+
   ul {
-    @apply list-disc indent-4;
+    @apply list-inside list-disc indent-2;
     li {
       margin-left: 0;
       padding-left: 0;
-        @apply list-item;
     }
   }
 }
