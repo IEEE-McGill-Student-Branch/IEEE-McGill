@@ -38,7 +38,7 @@
   }
 
   h1 {
-    @apply text-4xl text-center py-4 font-semibold;
+    @apply text-3xl text-center py-4 font-semibold;
   }
 
   .memberDiv {
@@ -46,12 +46,13 @@
   }
 
   #profilepic {
-    width: min(24rem, 100vw);
     @apply shadow-gray-500 drop-shadow-lg py-2;
   }
 
   #groupPic {
-    @apply border-4 border-spacing-1 rounded-lg;
-    border: #da5555af 5px solid;
+    @apply max-w-full border-4 border-spacing-1 rounded-lg;
+    @apply border-solid border-rose-400 dark:border-rose-900;
+;
+    @apply lg:border-0 border-spacing-0;
   }
 </style>

@@ -24,47 +24,45 @@
       </slot>
     </p>
     <a id="email" href="mailto:{email}">
-      <slot name=email>
-        <span class=missing>email?</span>
+      <slot name="email">
+        <span class="missing">email?</span>
       </slot>
     </a>
   </div>
 </article>
 
 <style lang="postcss">
-  * {
-    transition: all 0.7s ease-in-out;
-  }
-
   .member {
-    @apply flex flex-col items-center;
-    @apply rounded-md w-80 lg:w-96 p-4 m-4;
+    @apply flex flex-col items-center w-80;
+    word-break: break-word;
+    @apply rounded-md p-4 m-4;
     @apply border-4 border-rose-400;
+    @apply dark:border-rose-900;
     @apply shadow-lg;
-  }
+    
+    #info {
+      @apply text-center;
+    }
 
-  #info {
-    @apply text-center;
-  }
+    #name {
+      @apply text-xl font-semibold font-sans;
+    }
 
-  #name {
-    @apply text-xl font-semibold font-sans;
-  }
+    #pronouns {
+      @apply text-base;
+    }
 
-  #pronouns {
-    @apply text-base ;
-  }
+    #role {
+      @apply text-lg;
+    }
 
-  #role {
-    @apply text-lg;
-  }
+    #email {
+      @apply text-base text-rose-700 underline;
+      @apply dark:text-rose-300;
+    }
 
-  #email {
-    @apply text-rose-700 underline;
-    @apply dark:text-rose-300;
-  }
-
-  .missing {
-    color: #999;
+    .missing {
+      color: #999;
+    }
   }
 </style>

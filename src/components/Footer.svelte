@@ -23,11 +23,11 @@
       </h2>
       <hr class="my-2 border-gray-100 sm:mx-auto dark:border-gray-700" />
         <FooterLinkGroup class="grid md:grid-cols-3">
-          <FooterLink liClass="mb-4" href="/events">Upcoming Events</FooterLink>
+          <FooterLink liClass="mb-4" href="/events">Events</FooterLink>
           <FooterLink
             liClass="mb-4"
             href="https://docs.google.com/forms/d/e/1FAIpQLSfBLRxNxYmR7UxWEuJAscu5ZIueQRd3guV9stMVClLK3zghig/viewform"
-            target="_blank">Our newsletter</FooterLink
+            target="_blank">Newsletter</FooterLink
           >
           <FooterLink liClass="mb-4" href="/faq">FAQs</FooterLink>
         </FooterLinkGroup>
@@ -62,12 +62,12 @@
     </div>
   </div>
   <hr class="my-2 border-gray-300 sm:mx-auto dark:border-gray-700" />
-  <div class="grid grid-cols-4">
+  <div class="inline-flex">
+    <div class="text-center mr-5">
+      <DarkMode btnClass={darkModeClasses}/>
+    </div>
     <div class="col-span-3 self-center justify-self-start	">
       <FooterCopyright by="IEEE McGill SB." year={2023} copyrightMessage={"All Rights Reserved."}/>
-    </div>
-    <div class="text-center">
-      <DarkMode btnClass={darkModeClasses}/>
     </div>
   </div>
 </Footer>

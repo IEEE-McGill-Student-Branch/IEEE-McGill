@@ -12,10 +12,11 @@
     <Section>
       <h2 id="more-events">More Events</h2>
       ------
-      <ul>
+      <ul class="list-inside list-disc">
         {#each data.summaries as { slug, title, date }}
           <li>
-            <a id="other-titles" href="/events/{slug}">{title} - {date}</a>
+            <a id="other-titles" href="/events/{slug}"
+            class="hover:underline hover:text-red-500">{title}</a>
           </li>
         {/each}
       </ul>
@@ -25,8 +26,8 @@
 
 <style lang="postcss">
   .layout {
-    @apply grid grid-rows-2;
-    @apply lg:grid-cols-3;
+    @apply flex flex-col;
+    @apply lg:grid lg:grid-cols-3 lg:gap-0;
   }
   
   #more-events {
