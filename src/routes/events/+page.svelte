@@ -40,7 +40,7 @@
     @apply p-5 flex flex-wrap justify-center lg:p-3 gap-8;
 
     img {
-      @apply h-36 p-4 min-w-fit;
+      @apply h-36 p-4;
     }
   }
 </style>
