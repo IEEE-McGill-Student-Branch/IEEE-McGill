@@ -6,8 +6,9 @@
     FooterLink,
     FooterLinkGroup,
   } from "flowbite-svelte";
-  import { DarkMode } from 'flowbite-svelte';
-  let darkModeClasses = 'text-grey-300 dark:text-yellow-200 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg text-2xl m-0 p-2';
+  import { DarkMode } from "flowbite-svelte";
+  let darkModeClasses =
+    "text-grey-300 dark:text-yellow-200 hover:bg-gray-300 dark:hover:bg-gray-700 rounded-lg text-2xl m-0 p-2";
 </script>
 
 <Footer footerType="socialmedia">
@@ -18,18 +19,22 @@
         <h2
           class="mb-3 text-sm font-semibold text-gray-900 uppercase dark:text-white"
         >
-        
-        Resources
-      </h2>
-      <hr class="my-2 border-gray-100 sm:mx-auto dark:border-gray-700" />
+          Resources
+        </h2>
+        <hr class="my-2 border-gray-100 sm:mx-auto dark:border-gray-700" />
         <FooterLinkGroup class="grid md:grid-cols-3">
           <FooterLink liClass="mb-4" href="/events">Events</FooterLink>
           <FooterLink
             liClass="mb-4"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfBLRxNxYmR7UxWEuJAscu5ZIueQRd3guV9stMVClLK3zghig/viewform"
+            href="https://forms.gle/83JgVNWmzafGPjM67"
             target="_blank">Newsletter</FooterLink
           >
           <FooterLink liClass="mb-4" href="/faq">FAQs</FooterLink>
+          <FooterLink
+            liClass="mb-4 col-span-2"
+            href="https://www.ieee.org/membership/join/index.html"
+            >Become an IEEE Student</FooterLink
+          >
         </FooterLinkGroup>
       </div>
       <!-- SOCIAL MEDIA SECTION -->
@@ -64,10 +69,14 @@
   <hr class="my-2 border-gray-300 sm:mx-auto dark:border-gray-700" />
   <div class="inline-flex">
     <div class="text-center mr-5">
-      <DarkMode btnClass={darkModeClasses}/>
+      <DarkMode btnClass={darkModeClasses} />
     </div>
-    <div class="col-span-3 self-center justify-self-start	">
-      <FooterCopyright by="IEEE McGill SB." year={2023} copyrightMessage={"All Rights Reserved."}/>
+    <div class="col-span-3 self-center justify-self-start">
+      <FooterCopyright
+        by="IEEE McGill SB."
+        year={2023}
+        copyrightMessage={"All Rights Reserved."}
+      />
     </div>
   </div>
 </Footer>

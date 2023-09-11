@@ -14,17 +14,18 @@
     <AccordionItem>
       <span slot="header">How to register for IEEE Student Membership?</span>
       <p class="mb-2 text-gray-500 dark:text-gray-400">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ab
-        necessitatibus sint explicabo ...
+        Follow the link to <a href="https://www.ieee.org/membership/join/index.html" target="_blank" class="underline text-rose-700 dark:text-rose-200">IEEE Membership</a>
+        and select <b> "Join as a student"</b>. Follow the steps to create your account! <br>
+        Don't forget to use a discount code at checkout if you have one! (psst, we have one below!)
       </p>
 
-      <p class="text-gray-500 dark:text-gray-400">More instructions...</p>
+      <p class="text-gray-500 dark:text-gray-400"></p>
     </AccordionItem>
 
     <AccordionItem>
       <div slot="header">Is there any discount for the membership?</div>
       <p class="mb-2 text-gray-500 dark:text-gray-400">
-        Yes! Use code <b>WELCOME50</b> at registration checkout for 50% discount!
+        Yes! Use code <b class="text-rose-600 dark:text-rose-200">WELCOME50</b> at registration checkout for 50% discount!
       </p>
     </AccordionItem>
 
