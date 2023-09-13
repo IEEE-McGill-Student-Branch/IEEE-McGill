@@ -59,7 +59,7 @@ jobs:
 
     environment:
       name: github-pages
-      url:  ieeemcgill.antoinephan.me
+      url:  https://ieeemcgill.antoinephan.me
     
     steps:
       - name: Deploy
