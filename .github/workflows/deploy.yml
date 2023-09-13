@@ -33,7 +33,7 @@ jobs:
         with:
           path: 'build/'
 
-  deploy:
+  deployment-1:
     needs: build_site
     runs-on: ubuntu-latest
 
@@ -44,7 +44,22 @@ jobs:
     environment:
       name: github-pages
       url:  ${{ steps.deployment.outputs.page_url }}
-      url: ieeemcgill.antoinephan.me
+    
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v1
+  deployment-2:
+    needs: build_site
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url:  ieeemcgill.antoinephan.me
     
     steps:
       - name: Deploy
