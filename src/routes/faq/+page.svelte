@@ -25,7 +25,7 @@
     <AccordionItem>
       <div slot="header">Is there any discount for the membership?</div>
       <p class="mb-2 text-gray-500 dark:text-gray-400">
-        Yes! Use code <b class="text-rose-600 dark:text-rose-200">WELCOME50</b> at registration checkout for 50% discount!
+        Yes! Use code <b class="text-rose-600 dark:text-rose-200">FUTURE50</b> at registration checkout for 50% discount!
       </p>
     </AccordionItem>
 
