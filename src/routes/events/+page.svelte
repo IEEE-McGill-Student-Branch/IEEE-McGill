@@ -2,6 +2,7 @@
   import Section from "$components/Section.svelte";
   import EventPost from "$components/EventPost.svelte";
   export let data;
+
 </script>
 
 <head>
