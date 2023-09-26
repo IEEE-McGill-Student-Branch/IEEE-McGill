@@ -20,3 +20,9 @@
     {/each}
   </div>
 </Section>
+
+<style lang="postcss">
+  img {
+    @apply h-40;
+  }
+</style>

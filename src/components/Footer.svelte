@@ -29,6 +29,11 @@
             href="https://forms.gle/83JgVNWmzafGPjM67"
             target="_blank">Newsletter</FooterLink
           >
+          <!-- <FooterLink
+            liClass="mb-4"
+            href="/sponsors"
+            target="">Our Sponsors</FooterLink
+          > -->
           <FooterLink liClass="mb-4" href="/faq">FAQs</FooterLink>
           <FooterLink
             liClass="mb-4 col-span-2"
@@ -57,11 +62,11 @@
             href="https://www.facebook.com/mcgillieeesb"
             target="_blank">Facebook</FooterLink
           >
-          <FooterLink
+          <!-- <FooterLink
             liClass="mb-4"
             href="https://github.com/IEEE-McGill-Student-Branch"
             target="_blank">GitHub</FooterLink
-          >
+          > -->
         </FooterLinkGroup>
       </div>
     </div>

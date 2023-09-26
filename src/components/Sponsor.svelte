@@ -20,7 +20,7 @@
 <style lang="postcss">
   .sponsor-block {
     @apply flex flex-col items-center justify-center;
-    @apply p-4 m-6 w-80 bg-blue-50;
+    @apply p-4 m-6 w-max bg-blue-50;
     @apply border-4 border-gray-300;
     @apply rounded-md;
     @apply shadow-md;

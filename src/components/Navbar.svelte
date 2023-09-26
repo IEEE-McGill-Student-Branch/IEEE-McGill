@@ -19,5 +19,6 @@
     <NavLi class={NavItemClass} href="/events">Events</NavLi>
     <NavLi class={NavItemClass} href="/ourteam">Our Team</NavLi>
     <NavLi class={NavItemClass} href="/faq">FAQs</NavLi>
+    <NavLi class={NavItemClass} href="/sponsors">Our Sponsors</NavLi>
   </NavUl>
 </Navbar>

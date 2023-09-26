@@ -16,25 +16,30 @@
   </div>
   <div id="paragraph">
     <Section>
-      IEEE McGill Student Branch is a group of undergraduate and graduate
-      electrical & computer engineering students who want to have fun, make
-      friends, meet new people and learn about research and new innovations. We
-      offer a convivial platform for networking, volunteerism, soft skills and
-      leadership, discounts, awards and recognition.
+      The McGill University IEEE Student Branch was established in April 1968
+      and is one of the largest IEEE student branches in Eastern Canada. The
+      IEEE student branch at McGill is dedicated to the development of
+      professional skills of electrical & computer engineering students and the
+      larger academic community.
 
       <br />
       <br />
 
-      McGill University IEEE student branch was established in April 1968 and
-      currently has over 260 members, one of the largest branches in Eastern
-      Canada. We are dedicated to the development of professional skills of
-      electrical & computer engineering as well as computer science students.
-      IEEE and its members inspire a global community to innovate for a better
-      tomorrow through its more than 400,000 members in more than 160 countries,
-      and its highly cited publications, conferences, technology standards, and
-      professional and educational activities. IEEE is the trusted “voice” for
-      engineering, computing, and technology information around the globe.
+      We are mainly a group of undergraduate and graduate ECE & CS students who
+      want to have a great time, create a friendly community, and most
+      importantly learn about research and new innovations. We offer a welcoming
+      club for networking, volunteerism, teamwork, soft skills, leadership, and
+      recognition. We are under the tutelage of the larger IEEE organization and
+      organize events and activities such as talks, workshops, competitions,
+      company tours etc. for the benefit of all ECE/CS students.
       <br />
+      <br />
+      The IEEE organization (Institute of Electrical and Electronics Engineers) and
+      its members inspire a global community to innovate for a better tomorrow through
+      its more than 400,000 members in more than 160 countries, and its highly cited
+      publications, conferences, technology standards, and professional and educational
+      activities. IEEE is considered the trusted “voice” for engineering, computing,
+      and technology information around the globe.
     </Section>
   </div>
 </div>
