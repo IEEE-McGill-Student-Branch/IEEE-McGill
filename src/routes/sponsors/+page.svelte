@@ -12,7 +12,8 @@
   <h1>Special thanks to our sponsors throughout our events!</h1>
   <div>
     {#each data.sponsors as sponsor}
-      <Sponsor sponsorLink={sponsor.link}>
+      <!-- <Sponsor sponsorLink={sponsor.link}> -->
+      <Sponsor>
         <div slot="logo">
           <img src={sponsor.logo} alt={sponsor.name} />
         </div>
