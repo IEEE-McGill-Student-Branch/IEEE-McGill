@@ -24,7 +24,7 @@ export const posts = [
     location: "INRS - Place Bonaventure",
     background: IEEEExtreme,
     shortDescription: "Information about the event, registration, prizes, and more!",
-    content: fs.readFileSync("src/lib/IEEEXtreme18.md", "utf-8"),
+    content: fs.readFileSync("src/lib/IEEEXtreme17.md", "utf-8"),
   },
 
   {
