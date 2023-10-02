@@ -1,10 +1,10 @@
-## About IEEEXtreme 18.0
-IEEEXtreme is an annual online programming competition organized by the Institute of Electrical and Electronics Engineers (IEEE) for students from around the world.
+## About IEEEXtreme 17.0
+IEEEXtreme is an annual global programming competition organized by the Institute of Electrical and Electronics Engineers (IEEE) for students from around the world.
 
 The competition is designed to challenge participants' programming skills and problem-solving abilities. It takes place over a 24-hour period and involves solving a series of programming problems.
 
 ## Details
-This year’s competition will be held on 14 October at 00:00:00 UTC (20:00:00 | 8:00 PM EDT on 13 October)
+This year’s competition will be held on 28 October at 00:00:00 UTC (20:00:00 | 8:00 PM EDT on 27 October)
 
 As a global competition, IEEEXtreme is always virtual. Typically, students would compete with their team and their proctor in the same location, in most cases at their local Student Branch. The IEEEXtreme committee also allows teams to compete using online Video Conferencing Platforms in case teams and proctors cannot be in the same physical location.
 

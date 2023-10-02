@@ -9,8 +9,8 @@ export const posts = [
   {
     slug: "IEEE-Day-2023",
     title: "IEEE Day 2023",
-    date: "2023-10-03",
-    location: "TBA",
+    date: "October 3rd, 2023",
+    location: "PGSS Inc. Thomson House",
     background: IEEEDay,
     shortDescription:
       "Everything you need to know about IEEE Day 2023: Registration, Venue, and more!",
@@ -18,12 +18,12 @@ export const posts = [
   },
 
   {
-    slug: "IEEEXtreme-18.0",
-    title: "IEEEXtreme 18.0",
-    date: "2023-10-14",
-    location: "TBA",
+    slug: "IEEEXtreme-17.0",
+    title: "IEEEXtreme 17.0",
+    date: "October 27th-28th, 2023",
+    location: "INRS - Place Bonaventure",
     background: IEEEExtreme,
-    shortDescription: "Information about registration, prizes, and more!",
+    shortDescription: "Information about the event, registration, prizes, and more!",
     content: fs.readFileSync("src/lib/IEEEXtreme18.md", "utf-8"),
   },
 
