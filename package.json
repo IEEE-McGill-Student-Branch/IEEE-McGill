@@ -27,6 +27,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@awes-io/resize": "^2.1.0",
 		"@sveltejs/adapter-static": "^2.0.2",
 		"marked": "^9.0.0"
 	}
