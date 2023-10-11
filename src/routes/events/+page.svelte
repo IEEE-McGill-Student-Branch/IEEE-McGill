@@ -10,7 +10,7 @@
 </head>
 
 <Section>
-  <h1>Event Posts</h1>
+  <h1>Checkout our events!</h1>
 
   <div id="eventPosts">
     {#each data.summaries as event}
@@ -22,8 +22,8 @@
           />
         </div>
         <div slot="title">{event.title}</div>
-        <div slot=date>{event.date}</div>
-        <div slot=location>{event.location}</div>
+        <!-- <div slot=date>{event.date}</div>
+        <div slot=location>{event.location}</div> -->
         <div slot="shortDescription">
           {@html event.shortDesc}
         </div>

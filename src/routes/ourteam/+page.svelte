@@ -9,7 +9,9 @@
 
 <h1>Meet the team!</h1>
 <Section>
-  <img src={GroupPicture} alt="IEEE group" id="groupPic"/>
+  <div class="flex justify-center">
+    <img src={GroupPicture} alt="IEEE group" id="groupPic"/>
+  </div>
 
   <div class="memberDiv">
     {#each data.members as member}
@@ -50,9 +52,9 @@
   }
 
   #groupPic {
-    @apply max-w-full border-4 border-spacing-1 rounded-lg;
+    width: 90vw;
+    @apply border-4 border-spacing-1 rounded-lg;
     @apply border-solid border-rose-400 dark:border-rose-900;
-;
-    @apply lg:border-0 border-spacing-0;
+    @apply border-spacing-0;
   }
 </style>

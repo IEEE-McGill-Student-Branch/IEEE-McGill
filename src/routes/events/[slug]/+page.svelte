@@ -11,7 +11,8 @@
 <Section>
   <h1>{data.post.title}</h1>
   <h2>
-    DATE: {data.post.date} - LOCATION: {data.post.location}
+    <p>⏰ Time: {data.post.date}</p>
+    <p>🗺️ Location: {data.post.location}</p>
   </h2>
 
   <div class="content">
@@ -22,9 +23,14 @@
 
 <style lang="postcss">
   h1 {
-    @apply text-4xl;
+    @apply text-3xl text-center md:text-left;
     @apply font-bold;
     @apply mb-4;
+  }
+
+  h2 {
+    @apply text-xl text-left;
+    @apply py-1;
   }
 
   .content {
