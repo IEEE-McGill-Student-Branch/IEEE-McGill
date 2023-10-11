@@ -2,7 +2,7 @@
   import Logo from "$images/small_logo.png";
   import Section from "$components/Section.svelte";
   import "../app.css";
-  import IEEE from "$images/IEEE-blue.png";
+  // import IEEE from "$images/sponsors/IEEE-blue.png";
 </script>
 
 <title>IEEE McGill</title>
