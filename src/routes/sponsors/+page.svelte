@@ -10,11 +10,11 @@
 
 <Section>
   <h1>Special thanks to our sponsors throughout our events!</h1>
-  <div>
+  <div class="flex justify-center flex-row flex-wrap">
     {#each data.sponsors as sponsor}
-      <!-- <Sponsor sponsorLink={sponsor.link}> -->
-      <Sponsor>
-        <div slot="logo">
+      <Sponsor sponsorLink={sponsor.link}>
+      <!-- <Sponsor> -->
+        <div class="logo" slot="logo">
           <img src={sponsor.logo} alt={sponsor.name} />
         </div>
       </Sponsor>
@@ -23,7 +23,12 @@
 </Section>
 
 <style lang="postcss">
-  img {
-    @apply h-40;
+  h1 {
+    @apply text-2xl font-bold text-center;
+  }
+  .logo {
+    @apply flex items-center;
+    width: 12vw;
+    min-height: 12vw;
   }
 </style>
