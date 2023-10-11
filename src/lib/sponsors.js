@@ -16,5 +16,10 @@ export const sponsors = [
     name: "Staracom",
     logo: "https://uploads-ssl.webflow.com/63dd6237dfc7f1bdd5c595ec/63ebd679155653daff61d04b_staracom-logo-couleur-p-500.png",
     link: "https://www.staracom.ca"
+  },
+  {
+    name: "McGill EUS",
+    logo: "https://eus.wiki/images/c/c8/Eus_logo.png",
+    link: "https://mcgilleus.ca"
   }
 ];
