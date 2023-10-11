@@ -1,7 +1,7 @@
 <script>
   import Member from "$components/Member.svelte";
   import Section from "$components/Section.svelte";
-  import GroupPicture from "$images/IEEEexec-5293.jpg";
+  import GroupPicture from "$images/exec/IEEEexec-5293.jpg";
   export let data;
 </script>
 

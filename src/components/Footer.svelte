@@ -22,23 +22,23 @@
           Resources
         </h2>
         <hr class="my-2 border-gray-100 sm:mx-auto dark:border-gray-700" />
-        <FooterLinkGroup class="grid md:grid-cols-3">
-          <FooterLink liClass="mb-4" href="/events">Events</FooterLink>
+        <FooterLinkGroup class="grid grid-cols-1 md:grid-cols-3">
+          <!-- <FooterLink liClass="mb-4" href="/events">Events</FooterLink> -->
           <FooterLink
             liClass="mb-4"
             href="https://forms.gle/83JgVNWmzafGPjM67"
             target="_blank">Newsletter</FooterLink
           >
-          <!-- <FooterLink
-            liClass="mb-4"
-            href="/sponsors"
-            target="">Our Sponsors</FooterLink
-          > -->
-          <FooterLink liClass="mb-4" href="/faq">FAQs</FooterLink>
+          <!-- <FooterLink liClass="mb-4" href="/faq">FAQs</FooterLink> -->
           <FooterLink
-            liClass="mb-4 col-span-2"
-            href="https://www.ieee.org/membership/join/index.html"
-            >Become an IEEE Student</FooterLink
+          liClass="mb-4 md:col-span-2 col-span-3"
+          href="https://www.ieee.org/membership/join/index.html"
+          >Become an IEEE Student</FooterLink
+          >
+          <FooterLink
+            liClass="mb-4 col-span-3"
+            href="https://github.com/notkaramel/IEEE-McGill"
+            target="">Contribute to this project!</FooterLink
           >
         </FooterLinkGroup>
       </div>
@@ -62,11 +62,6 @@
             href="https://www.facebook.com/mcgillieeesb"
             target="_blank">Facebook</FooterLink
           >
-          <!-- <FooterLink
-            liClass="mb-4"
-            href="https://github.com/IEEE-McGill-Student-Branch"
-            target="_blank">GitHub</FooterLink
-          > -->
         </FooterLinkGroup>
       </div>
     </div>
