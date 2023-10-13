@@ -13,7 +13,6 @@
   <div class="flex justify-center flex-row flex-wrap">
     {#each data.sponsors as sponsor}
       <Sponsor sponsorLink={sponsor.link}>
-      <!-- <Sponsor> -->
         <div class="logo" slot="logo">
           <img src={sponsor.logo} alt={sponsor.name} />
         </div>
@@ -26,9 +25,10 @@
   h1 {
     @apply text-2xl font-bold text-center;
   }
+  
   .logo {
     @apply flex items-center;
-    width: 12vw;
-    min-height: 12vw;
+    width: 20vw;
+    min-height: 20vw;
   }
 </style>
