@@ -12,13 +12,13 @@
       <em><img src="https://via.placeholder.com/150" alt="sponsor-logo-missing"/></em>
     </slot>
   </a>
-    <slot name="name"/>
 </div>
 
 <style lang="postcss">
   .sblock {
-    @apply flex flex-row items-center justify-center;
-    @apply p-4 m-6 bg-white dark:bg-zinc-100;
+    @apply flex flex-row items-center place-content-evenly justify-center;
+    @apply bg-white dark:bg-zinc-100;
+    @apply px-3 m-2 w-52 h-52;
     @apply border-4 border-gray-300;
     @apply rounded-md;
     @apply shadow-md;

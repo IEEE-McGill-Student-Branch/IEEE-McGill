@@ -6,7 +6,7 @@
 </script>
 
 <a href="/events/{eventSlug}">
-<article id={eventSlug}>
+  <article id={eventSlug}>
     <div class="img">
       <slot name="thumbnail">
         <em>Thumbnail in the making :)</em>
@@ -39,7 +39,7 @@
   article {
     @apply flex flex-col place-content-evenly items-center;
     @apply px-3 m-2 w-80 h-72;
-    @apply lg:grid lg:p-6 lg:m-6; 
+    @apply lg:grid lg:p-6 lg:m-6;
     @apply border-4 border-gray-300;
     @apply rounded-lg shadow-md;
     @apply overflow-hidden;

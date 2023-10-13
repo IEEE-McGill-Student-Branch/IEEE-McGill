@@ -13,8 +13,8 @@
   <div class="flex justify-center flex-row flex-wrap">
     {#each data.sponsors as sponsor}
       <Sponsor sponsorLink={sponsor.link}>
-        <div class="logo" slot="logo">
-          <img src={sponsor.logo} alt={sponsor.name} />
+        <div slot="logo">
+          <img class="logo" src={sponsor.logo} alt={sponsor.name} />
         </div>
       </Sponsor>
     {/each}
@@ -27,8 +27,8 @@
   }
   
   .logo {
-    @apply flex items-center;
-    width: 20vw;
-    min-height: 20vw;
+    @apply flex items-center object-cover object-center w-32;
+    /* width: 20vw;
+    min-height: 20vw; */
   }
 </style>

@@ -3,7 +3,7 @@ import IEEEDay from "$images/events/IEEEDay.png";
 import IEEESquare from "$images/events/IEEE-Square.png";
 import Arduino from "$images/events/Arduino.png"
 import AWS from "$images/events/aws-logo.webp"
-import fs from "fs";
+import * as fs from 'node:fs';
 
 export const posts = [
   {
