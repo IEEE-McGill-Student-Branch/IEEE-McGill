@@ -1,10 +1,10 @@
 import BlankPFP from "$images/exec/blankPFP.png";
 
 import President from "$images/exec/IEEEexecSquare-5266.jpg";
-// import VPInternal from "$images/IEEEexecSquare";
+import VPInternal from "$images/exec/IEEEexecSquare-Justin.jpg";
 import VPIT from "$images/exec/IEEEexecSquare-5149.jpg";
 import VPFinance from "$images/exec/IEEEexecSquare-5225.jpg";
-import Secretary from "$images/exec/IEEEexecSquare-5256.jpg";
+// import Secretary from "$images/exec/IEEEexecSquare-5256.jpg";
 import DirectorWeb from "$images/exec/IEEEexecSquare-5287.jpg";
 import DirectorCompetitions from "$images/exec/IEEEexecSquare-5167.jpg";
 import DirectorAcademicAffairs from "$images/exec/IEEEexecSquare-5138.jpg";
@@ -30,24 +30,24 @@ export const members = [
       ]
     }
   },
-  {
-    "name": "Sogol Masoumzadeh",
-    "role": "Secretary",
-    "profilepic": Secretary,
-    "email": "ieee.secretary@mcgilleus.ca",
-    "pronouns": "she/her",
-    "moreInfo": {
-      "description": "",
-      "duties": [
-      ]
-    }
-  },
+  // {
+  //   "name": "Sogol Masoumzadeh",
+  //   "role": "Secretary",
+  //   "profilepic": Secretary,
+  //   "email": "ieee.secretary@mcgilleus.ca",
+  //   "pronouns": "she/her",
+  //   "moreInfo": {
+  //     "description": "",
+  //     "duties": [
+  //     ]
+  //   }
+  // },
   {
     "name": "Justin Randisi",
     "role": "VP Internal",
     "email": "ieee.internal@mcgilleus.ca",
     "pronouns": "he/him",
-    "profilepic": BlankPFP,
+    "profilepic": VPInternal,
     "moreInfo": {
       "description": "",
       "duties": [
