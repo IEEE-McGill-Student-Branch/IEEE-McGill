@@ -13,8 +13,7 @@ export const posts = [
     location: "TBA",
     background: Arduino,
     shortDescription: "Coming soon in January!",
-    content: "To be annoucned!",
-    // content: fs.readFileSync("src/lib/ArduinoWorkshop-P1.md", "utf-8"),
+    content: fs.readFileSync("src/lib/ArduinoWorkshop-P1.md", "utf-8"),
   },
   {
     slug: "Arduino-Workshop-P2",
