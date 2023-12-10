@@ -2,6 +2,7 @@ import IEEEExtreme from "$images/events/IEEEXtreme.png";
 import IEEEDay from "$images/events/IEEEDay.png";
 // import IEEESquare from "$images/events/IEEE-Square.png";
 import Arduino from "$images/events/Arduino.png"
+import TheFactory from "$images/events/TheFactoryLogo.png";
 import AWS from "$images/events/aws-logo.webp"
 import * as fs from 'node:fs';
 
@@ -22,16 +23,18 @@ export const posts = [
     location: "TBA",
     background: Arduino,
     shortDescription: "Coming soon!",
-    content: "Coming soon!",
+    // content: "Coming soon!",
+    content: fs.readFileSync("src/lib/ArduinoWorkshop-P2.md", "utf-8"),
   },
   {
     slug: "ForgeMcGill",
     title: "Forge McGill",
     date: "January 21st, 2024",
     location: "TBA",
-    background: Arduino,
+    background: TheFactory,
     shortDescription: "A hardware hackathon?! in collaboration with The Factory!?!",
-    content: "Coming soon!",
+    // content: "Coming soon!",
+    content: fs.readFileSync("src/lib/ForgeMcGill.md", "utf-8"),
   },
   {
     slug: "AWS-Workshop",
