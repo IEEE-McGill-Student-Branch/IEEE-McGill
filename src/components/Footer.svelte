@@ -29,7 +29,7 @@
             href="https://forms.gle/83JgVNWmzafGPjM67"
             target="_blank">Newsletter</FooterLink
           >
-          <!-- <FooterLink liClass="mb-4" href="/faq">FAQs</FooterLink> -->
+          <FooterLink liClass="mb-4" href="/faq">FAQs</FooterLink>
           <FooterLink
           liClass="mb-4 md:col-span-2 col-span-3"
           href="https://www.ieee.org/membership/join/index.html"
