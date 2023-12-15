@@ -21,4 +21,11 @@ Join us for a hands-on workshop where you'll learn the basics of building with A
 
 This workshop is open to anyone interested in learning about Arduino and building interactive projects. No prior experience is necessary, but basic programming and electronics knowledge is helpful.
 
+## Important Information
+- This workshop will cost $5 and payment can be made via e-transfer or cash at the door.
+- There will be free pizza and drinks at the end! 🍕🍕🍕
+- Please bring your own computer with the [Arduino IDE]​(https://www.arduino.cc/en/software) installed.
+- Your computer will connect via USB-A to the Arduino.
+- Please bring an adapter if your computer does not have a USB-A port.
+
 **We look forward to seeing you at the workshop!**
