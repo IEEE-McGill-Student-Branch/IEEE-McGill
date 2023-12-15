@@ -5,7 +5,7 @@
 </button>
 <button>
   <a href="https://drive.google.com/file/d/1go96AdPcW-GxtiLaVeIQD-gIIvEhnMO4/view?usp=sharing" target="_blank">
-      Slides - Part II
+      Participant Package - Part II
   </a>
 </button>
 
