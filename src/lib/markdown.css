@@ -22,7 +22,7 @@
     @apply dark:bg-gray-600;
   }
   a {
-    @apply text-blue-600 dark:text-cyan-300;
+    @apply text-blue-600 dark:text-cyan-400;
     @apply hover:text-blue-500 dark:hover:text-cyan-200;
   }
   ul {
@@ -31,5 +31,22 @@
     ul {
       list-style-type: circle;
     }
+  }
+
+  button {
+    @apply bg-rose-500 py-2 px-4 my-1 md:my-2 rounded;
+    @apply dark:bg-gray-600;
+    @apply hover:bg-rose-600 dark:hover:bg-gray-500;
+    /* Overwrite a selector above */
+    a {
+      @apply text-white font-bold dark:text-white;
+      @apply hover:text-white dark:hover:text-white; 
+    }
+  }
+
+  blockquote {
+    @apply bg-gray-100 dark:bg-gray-600;
+    @apply border-l-4 pl-2;
+    @apply border-gray-400 dark:border-rose-500;
   }
 }
