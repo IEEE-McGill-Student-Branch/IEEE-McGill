@@ -16,7 +16,7 @@ Come join us to learn about the basics of **cloud computing** with **Amazon Web 
 - And more!
 
 ## Event Details
-- **Date:** Thursday, March 14th, 2024
+- **Date:** Thursday, March 21th, 2024
 - **Time:** 6:00 PM - 9:00 PM (EDT)
 - **Location:** TBD
 - **Cost:** it's FREE!

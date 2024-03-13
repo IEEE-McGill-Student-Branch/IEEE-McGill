@@ -4,27 +4,17 @@ import Arduino from "$images/events/Arduino.png"
 import TheFactory from "$images/events/TheFactoryLogo.png";
 import AWS from "$images/events/aws-logo.webp"
 import IEEEConcordia from "$images/events/IEEEConcordia.png";
-import CompaniesNight from '$images/events/networking.png';
 import * as fs from 'node:fs';
 
 export const posts = [
   {
     slug: "AWS-Workshop",
     title: "AWS Workshop",
-    date: "March 14th, 2024 | 6:00 PM - 9:00 PM (EDT)",
+    date: "March 21th, 2024 | 6:00 PM - 9:00 PM (EDT)",
     location: "TBA",
     background: AWS,
     shortDescription: "Cloud computing workshop with AWS",
     content: fs.readFileSync("src/lib/AWSWorkshop.md", "utf-8"),
-  },
-  {
-    slug: "Companies-Night",
-    title: "Companies Night",
-    date: "TBA",
-    location: "TBA",
-    background: CompaniesNight,
-    shortDescription: "A networking event with companies",
-    content: fs.readFileSync("src/lib/CompaniesNight.md", "utf-8"),
   },
   {
     slug: "Arduino-Workshop-P1",
