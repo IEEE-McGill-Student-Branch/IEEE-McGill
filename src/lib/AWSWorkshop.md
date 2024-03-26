@@ -15,10 +15,7 @@ Come join us to learn about the basics of **cloud computing** with **Amazon Web 
 - How to connect to an EC2 instance via SSH.
 - And more!
 
-## Event Details
-- **Date:** Thursday, March 21th, 2024
-- **Time:** 6:00 PM - 9:00 PM (EDT)
-- **Location:** TBD
+## Extra details
 - **Cost:** it's FREE!
 - **Food:** There will be pizza and drinks during the workshop! 🍕🍕🍕
 

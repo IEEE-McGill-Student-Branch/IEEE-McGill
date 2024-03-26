@@ -10,8 +10,8 @@ export const posts = [
   {
     slug: "AWS-Workshop",
     title: "AWS Workshop",
-    date: "March 21th, 2024 | 6:00 PM - 9:00 PM (EDT)",
-    location: "TBA",
+    date: "April 4th, 2024 | 6:00 PM - 9:00 PM (EDT)",
+    location: "WONG 1050 - McGill University",
     background: AWS,
     shortDescription: "Cloud computing workshop with AWS",
     content: fs.readFileSync("src/lib/AWSWorkshop.md", "utf-8"),
