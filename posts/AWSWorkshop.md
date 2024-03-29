@@ -1,6 +1,6 @@
 <button>
-  <a href="/" target="_blank">
-    Registration (coming soon)
+  <a href="https://events.vtools.ieee.org/m/414532" target="_blank">
+    Registration
   </a>
 </button>
 
