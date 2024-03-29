@@ -5,7 +5,30 @@ import Arduino from "$images/events/Arduino.png"
 import TheFactory from "$images/events/TheFactoryLogo.png";
 import AWS from "$images/events/aws-logo.webp"
 import IEEEConcordia from "$images/events/IEEEConcordia.png";
-import * as fs from 'node:fs';
+/*
+old way to fetch content:
+  import fs from "fs";
+  content = fs.readFileSync("posts/AWSWorkshop.md", "utf-8");
+*/
+
+const rootPath = "https://raw.githubusercontent.com/IEEE-McGill-Student-Branch/IEEE-McGill/main/posts/";
+
+/**
+ * Get the content of a file from the repository on GitHub
+ * @param {string} fileName 
+ * @returns the content of the file in string format
+ */
+async function fetchContent(fileName) {
+  /** @type {Promise<string | void>} */
+  let content = fetch(rootPath + fileName)
+    .then((response) => response.text())
+    .then((text) => text)
+    .catch((error) => {
+      console.error("Error fetching content: ", error);
+    });
+  return content;
+}
+
 
 export const posts = [
   {
@@ -15,7 +38,7 @@ export const posts = [
     location: "279 MacDonald Building - McGill University",
     background: AWS,
     shortDescription: "Cloud computing workshop with AWS",
-    content: fs.readFileSync("posts/AWSWorkshop.md", "utf-8"),
+    content: await fetchContent("AWSWorkshop.md"),
   },
   {
     slug: "IEEE-McGill-Elections-2024",
@@ -24,7 +47,7 @@ export const posts = [
     location: "Online",
     background: IEEEMcGill,
     shortDescription: "Your chance to join the IEEE McGill executives team!",
-    content: fs.readFileSync("posts/IEEEElection2024.md", "utf-8"),
+    content: await fetchContent("IEEEElection2024.md"),
   },
   {
     slug: "IEEE-Social-Event",
@@ -33,7 +56,7 @@ export const posts = [
     location: "TBA",
     background: IEEEMcGill,
     shortDescription: "Meet the execs and have a good time!",
-    content: fs.readFileSync("posts/IEEESocial.md", "utf-8"),
+    content: await fetchContent("IEEESocial.md"),
   },
   {
     slug: "Arduino-Workshop-P1",
@@ -42,7 +65,7 @@ export const posts = [
     location: "WONG 1050 - McGill University",
     background: Arduino,
     shortDescription: "Learn about the basics of Arduino!",
-    content: fs.readFileSync("posts/ArduinoWorkshop-P1.md", "utf-8"),
+    content: await fetchContent("ArduinoWorkshop-P1.md"),
   },
   {
     slug: "Arduino-Workshop-P2",
@@ -51,7 +74,7 @@ export const posts = [
     location: "WONG 1050 - McGill University",
     background: Arduino,
     shortDescription: "Advanced techniques and usage of Arduino",
-    content: fs.readFileSync("posts/ArduinoWorkshop-P2.md", "utf-8"),
+    content: await fetchContent("ArduinoWorkshop-P2.md"),
   },
   {
     slug: "ForgeMcGill",
@@ -60,7 +83,7 @@ export const posts = [
     location: "Trottier Building - Floor 0 & Floor 5",
     background: TheFactory,
     shortDescription: "A hardware hackathon organized by The Factory",
-    content: fs.readFileSync("posts/ForgeMcGill.md", "utf-8"),
+    content: await fetchContent("ForgeMcGill.md"),
   },
   {
     slug: "Robowars",
@@ -69,7 +92,7 @@ export const posts = [
     location: "TBA",
     background: IEEEConcordia,
     shortDescription: "A robotic competition organized by IEEE Concordia",
-    content: fs.readFileSync("posts/Robowars.md", "utf-8"),
+    content: await fetchContent("Robowars.md"),
   },
   {
     slug: "IEEE-Day-2023",
@@ -79,7 +102,7 @@ export const posts = [
     background: IEEEDay,
     shortDescription:
       "Everything you need to know about IEEE Day 2023: Registration, Venue, and more!",
-    content: fs.readFileSync("posts/IEEE-Day-2023.md", "utf-8"),
+    content: await fetchContent("IEEE-Day-2023.md"),
   },
 
   {
@@ -89,6 +112,6 @@ export const posts = [
     location: "INRS - Place Bonaventure",
     background: IEEEExtreme,
     shortDescription: "Information about the event, registration, prizes, and more!",
-    content: fs.readFileSync("posts/IEEEXtreme17.md", "utf-8"),
+    content: await fetchContent("IEEEXtreme17.md"),
   },
 ];
