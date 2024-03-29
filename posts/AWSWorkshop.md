@@ -7,6 +7,9 @@
 ## Summary
 Come join us to learn about the basics of **cloud computing** with **Amazon Web Services (AWS)**. The workshop is open to anyone interested in learning about cloud computing in general. We will provide an overview of AWS, creating an account, and starting an EC2 instance. No prior experience is necessary, but basic programming and command-line knowledge is helpful.
 
+## Presenter
+This workshop will be presented by **Fozail Ahmad** - PhD candidate in Cloud computing & IEEE McGill President.
+
 ## What You Will Learn
 - Introduction to cloud computing and AWS.
 - Basics of command-line interface (CLI).
