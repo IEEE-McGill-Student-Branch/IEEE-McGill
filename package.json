@@ -14,7 +14,7 @@
 		"@sveltejs/kit": "^1.27.7",
 		"autoprefixer": "^10.4.14",
 		"flowbite-svelte": "^0.44.8",
-		"flowbite-svelte-icons": "^0.4.3",
+		"flowbite-svelte-icons": "^1.5.0",
 		"postcss": "^8.4.27",
 		"svelte": "^4.0.5",
 		"svelte-check": "^3.4.3",
