@@ -11,7 +11,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.2.0",
-		"@sveltejs/kit": "^2.5.7",
+		"@sveltejs/kit": "^2.5.8",
 		"autoprefixer": "^10.4.19",
 		"flowbite-svelte": "^0.46.1",
 		"flowbite-svelte-icons": "^1.5.0",
