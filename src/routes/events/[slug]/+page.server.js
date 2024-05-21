@@ -7,6 +7,10 @@ export function load({ params }) {
 
   if (!post) throw error(404);
 
+  if (!post.content) {
+    throw Error("Post content not found");
+  }
+
   let postContent = marked.parse(post.content);
 
   return {
