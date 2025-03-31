@@ -1,70 +1,70 @@
 // import BlankPFP from "$images/exec/blankPFP.png";
 
-import President from "$images/exec/IEEEexecSquare-5266.jpg";
-import VPInternal from "$images/exec/IEEEexecSquare-Justin.jpg";
-import VPIT from "$images/exec/IEEEexecSquare-5149.jpg";
-import VPFinance from "$images/exec/IEEEexecSquare-5225.jpg";
-import DirectorWeb from "$images/exec/IEEEexecSquare-5287.jpg";
-import DirectorCompetitions from "$images/exec/IEEEexecSquare-5167.jpg";
-import DirectorAcademicAffairs from "$images/exec/IEEEexecSquare-5138.jpg";
-import VPExternalAffairs from "$images/exec/IEEEexecSquare-Shahab.jpg";
+import President from "$images/exec/Antoine.jpg";
+import VPInternal from "$images/exec/Nicolas.jpg";
+import VPIT from "$images/exec/Simon.jpg";
+import VPFinance from "$images/exec/Fozail.jpg";
+import VPCommunications from "$images/exec/blankPFP.png";
+import VPWorkshopsCompetitions from "$images/exec/JP.jpg";
+import VPEvents from "$images/exec/blankPFP.png";
+import VPExternal from "$images/exec/Hosein.jpg";
 
 
 export const members = [
   {
-    "name": "Fozail Ahmad",
+    "name": "Antoine Phan",
     "role": "President",
     "email": "ieee.president@mcgilleus.ca",
     "pronouns": "he/him",
     "profilepic": President
   },
   {
-    "name": "Justin Randisi",
+    "name": "Nicolas El Murr",
     "role": "VP Internal",
     "email": "ieee.internal@mcgilleus.ca",
     "pronouns": "he/him",
     "profilepic": VPInternal,
   },
   {
-    "name": "Mohammad Hossein Motavas",
+    "name": "Fozail Ahmad",
     "role": "VP Finance",
     "profilepic": VPFinance,
     "email": "ieee.finance@mcgilleus.ca",
     "pronouns": "he/him",
   },
   {
-    "name": "Theo Ghanem",
-    "role": "VP IT",
+    "name": "Simon Ngassam",
+    "role": "VP IT & VP Admin",
     "profilepic": VPIT,
     "email": "ieee.it@mcgilleus.ca",
     "pronouns": "he/him",
   },
   {
-    "name": "Shahab MahmoudiSadaghiani",
-    "role": "VP External Affairs",
-    "profilepic": VPExternalAffairs,
+    "name": "Hosein Anabestani",
+    "role": "VP External",
+    "profilepic": VPExternal,
     "email": "ieee.externalaffairs@mcgilleus.ca",
     "pronouns": "he/him",
   },
   {
-    "name": "Hangyi Hao",
-    "role": "Director of Academic Affairs",
-    "profilepic": DirectorAcademicAffairs,
-    "email": "ieee.academicaffairs@mcgilleus.ca",
-    "pronouns": "she/her",
-  },
-  {
-    "name": "Antoine Phan",
-    "role": "Director of Web",
-    "profilepic": DirectorWeb,
-    "email": "ieee.web@mcgilleus.ca",
+    "name": "Alex Maalouf",
+    "role": "VP Events",
+    "profilepic": VPEvents,
+    "email": "ieee.events@mcgilleus.ca",
     "pronouns": "he/him",
   },
   {
-    "name": "Nicolas El Murr",
-    "role": "Director of Competitions",
-    "profilepic": DirectorCompetitions,
+    "name": "John-Paul Chouery",
+    "role": "VP Workshops and Competitions",
+    "profilepic": VPWorkshopsCompetitions,
     "email": "ieee.competitions@mcgilleus.ca",
+    "pronouns": "he/him",
+  },
+  {
+    "name": "Vacant",
+    "role": "VP Communications",
+    "profilepic": VPCommunications,
+    "email": "ieee.marketing@mcgilleus.ca",
     "pronouns": "he/him",
   },
 ];
