@@ -1,7 +1,7 @@
 <script>
   import Section from "$components/Section.svelte";
   import Sponsor from "$components/Sponsor.svelte";
-  export let data;
+  let { data } = $props();
 </script>
 
 <head>
@@ -9,26 +9,16 @@
 </head>
 
 <Section>
-  <h1>Special thanks to our sponsors throughout our events!</h1>
-  <div class="flex justify-center flex-row flex-wrap">
+  <h1 class="text-2xl font-bold text-center">Special thanks to our sponsors throughout our events!</h1>
+  <div class="flex flex-row flex-wrap place-content-center place-items-center gap-10">
     {#each data.sponsors as sponsor}
       <Sponsor sponsorLink={sponsor.link}>
-        <div slot="logo">
-          <img class="logo" src={sponsor.logo} alt={sponsor.name} />
-        </div>
+        {#snippet logo()}
+          <div>
+            <img class="grid place-self-center h-32 m-4" src={sponsor.logo} alt={sponsor.name} />
+          </div>
+        {/snippet}
       </Sponsor>
     {/each}
   </div>
 </Section>
-
-<style lang="postcss">
-  h1 {
-    @apply text-2xl font-bold text-center;
-  }
-  
-  .logo {
-    @apply flex items-center object-cover object-center w-32;
-    /* width: 20vw;
-    min-height: 20vw; */
-  }
-</style>

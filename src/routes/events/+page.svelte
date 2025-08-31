@@ -1,8 +1,7 @@
 <script>
   import Section from "$components/Section.svelte";
   import EventPost from "$components/EventPost.svelte";
-  export let data;
-
+  let { data } = $props();
 </script>
 
 <head>
@@ -10,38 +9,16 @@
 </head>
 
 <Section>
-  <h1>Checkout our events!</h1>
+  <h1 class="text-2xl text-center font-semibold px-4">Checkout our events!</h1>
 
-  <div id="eventPosts">
+  <div class="p-5 flex flex-wrap justify-center lg:p-3 gap-8;">
     {#each data.summaries as event}
-      <EventPost eventSlug={event.slug}>
-        <div slot="thumbnail">
-          <img
-            src={event.background}
-            alt="Event {event.title} thumbnail"
-          />
-        </div>
-        <div slot="title">{event.title}</div>
-        <!-- <div slot=date>{event.date}</div>
-        <div slot=location>{event.location}</div> -->
-        <div slot="shortDescription">
-          {@html event.shortDesc}
-        </div>
-      </EventPost>
+      <EventPost
+        eventSlug={event.slug}
+        thumbnail={event.background}
+        title={event.title}
+        shortDescription={event.shortDesc}
+      />
     {/each}
   </div>
 </Section>
-
-<style lang="postcss">
-  h1 {
-    @apply text-2xl text-center font-semibold px-4;
-  }
-
-  #eventPosts {
-    @apply p-5 flex flex-wrap justify-center lg:p-3 gap-8;
-
-    img {
-      @apply h-36 p-4;
-    }
-  }
-</style>

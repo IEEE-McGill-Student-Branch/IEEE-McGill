@@ -16,18 +16,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: latest
-          cache: npm
+      - name: Setting up PNPM to install packages
+        uses: pnpm/action-setup@v4
 
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: build
         run: |
-          npm run build
+          pnpm build
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3

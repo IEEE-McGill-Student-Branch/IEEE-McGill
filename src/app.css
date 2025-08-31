@@ -1,3 +1,100 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@plugin 'flowbite/plugin';
+
+@source '../node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary-50: #fffefd;
+  --color-primary-100: #fff1ee;
+  --color-primary-200: #ffe4de;
+  --color-primary-300: #ffd5cc;
+  --color-primary-400: #ffbcad;
+  --color-primary-500: #fe795d;
+  --color-primary-600: #b90f37;
+  --color-primary-700: #b90f37;
+  --color-primary-800: #cc4522;
+  --color-primary-900: #a5371b;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+body {
+  font: 16px;
+  @apply font-sans m-0;
+  overflow: scroll;
+}
+
+.content {
+  /* Styling to markdown components of the post */
+  * {
+    @apply dark:text-white;
+  }
+
+  h1 {
+    @apply font-bold text-2xl pt-3 pb-1 mb-2;
+    @apply border-b-2 border-gray-400;
+  }
+
+  h2 {
+    @apply font-bold text-xl pt-3 pb-1 mb-2;
+    @apply border-b-2 border-gray-400;
+  }
+  p {
+    @apply font-sans text-lg py-1 text-left;
+  }
+  code {
+    @apply font-mono text-sm text-rose-800 bg-slate-200 py-1 px-2 rounded-md;
+    @apply dark:bg-gray-600;
+  }
+  a {
+    @apply text-blue-600 dark:text-cyan-400;
+    @apply hover:text-blue-500 dark:hover:text-cyan-200;
+  }
+  ul {
+    @apply list-outside list-disc pl-6 text-left;
+    @apply marker:text-rose-800 dark:marker:text-rose-200;
+    ul {
+      list-style-type: circle;
+    }
+  }
+
+  button {
+    @apply bg-rose-500 py-2 px-4 my-1 md:my-2 rounded;
+    @apply dark:bg-gray-600;
+    @apply hover:bg-rose-600 dark:hover:bg-gray-500;
+    /* Overwrite a selector above */
+    a {
+      @apply text-white font-bold dark:text-white;
+      @apply hover:text-white dark:hover:text-white;
+    }
+  }
+
+  blockquote {
+    @apply bg-gray-100 dark:bg-gray-600;
+    @apply border-l-4 pl-2;
+    @apply border-gray-400 dark:border-rose-500;
+  }
+
+  @apply text-gray-700;
+  @apply text-justify;
+  @apply mb-4;
+}

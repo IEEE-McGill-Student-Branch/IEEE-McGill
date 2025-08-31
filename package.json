@@ -10,22 +10,26 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^2.1.1",
-		"@sveltejs/kit": "^1.30.4",
-		"autoprefixer": "^10.4.21",
-		"flowbite-svelte": "^0.44.24",
-		"flowbite-svelte-icons": "^0.4.5",
+		"@sveltejs/adapter-auto": "^3.3.1",
+		"@sveltejs/kit": "^2.37.0",
+		"@sveltejs/vite-plugin-svelte": "^4.0.4",
+		"flowbite": "^3.1.2",
+		"flowbite-svelte": "^1.13.4",
+		"flowbite-svelte-icons": "^3.0.0",
 		"postcss": "^8.5.6",
-		"svelte": "^4.2.20",
-		"svelte-check": "^3.8.6",
-		"tailwindcss": "^3.4.17",
+		"svelte": "^5.38.6",
+		"svelte-check": "^4.3.1",
+		"tailwindcss": "^4.1.12",
 		"typescript": "^5.9.2",
-		"vite": "^4.5.14"
+		"vite": "^5.4.19"
 	},
 	"type": "module",
 	"dependencies": {
 		"@awes-io/resize": "^2.1.0",
-		"@sveltejs/adapter-static": "^2.0.3",
-		"marked": "^9.1.6"
+		"@sveltejs/adapter-static": "^3.0.9",
+		"@tailwindcss/postcss": "^4.1.12",
+		"@tailwindcss/vite": "^4.1.12",
+		"marked": "^9.1.6",
+		"postcss-import": "^16.1.1"
 	}
 }

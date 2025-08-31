@@ -5,7 +5,7 @@ import { marked } from "marked";
 export function load({ params }) {
   const post = posts.find((post) => post.slug === params.slug);
 
-  if (!post) throw error(404);
+  if (!post) error(404);
 
   if (!post.content) {
     throw Error("Post content not found");

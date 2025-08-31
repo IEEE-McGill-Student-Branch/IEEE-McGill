@@ -1,23 +1,20 @@
 <script>
   import { marked } from "marked";
-  import style from "$lib/markdown.css?inline";
 
-  let markdown = "";
-  const stylesheet = `<style> + ${style} + </style>`
+  let markdown = $state("");
 </script>
 
 <h1>Markdown Editor</h1>
 
 <!-- Declare a textarea where the user can enter markdown, and bind it to the variable `markdown` -->
-<textarea bind:value={markdown} placeholder="Enter markdown here" />
+<textarea bind:value={markdown} placeholder="Enter markdown here"></textarea>
 
 <!-- Convert the markdown to HTML and display it -->
 <div class="preview">
-  {@html stylesheet}
   {@html marked.parse(markdown)}
 </div>
 
-<style lang="postcss">
+<style>
   textarea,
   .preview {
     box-sizing: border-box;
