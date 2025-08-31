@@ -10,7 +10,7 @@
 <div id="content">
   <div id="introduction">
     <h1>
-      <img src={Logo} id="logo" alt="IEEE McGill Emblem" />
+      <img src={Logo} id="logo" alt="IEEE McGill Emblem" class="inline size-16 mx-3"/>
       IEEE McGill Student Branch
     </h1>
   </div>
@@ -59,8 +59,10 @@
 </div> -->
 
 <style lang="postcss">
+  @reference '../app.css'
+
   #logo {
-    @apply inline w-20 mx-3;
+    @apply ;
   }
 
   h1 {

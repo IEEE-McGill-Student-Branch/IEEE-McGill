@@ -23,20 +23,20 @@
         </h2>
         <hr class="my-2 border-gray-100 sm:mx-auto dark:border-gray-700" />
         <FooterLinkGroup class="grid grid-cols-1 md:grid-cols-3">
-          <!-- <FooterLink liClass="mb-4" href="/events">Events</FooterLink> -->
+          <!-- <FooterLink class="mb-4" href="/events">Events</FooterLink> -->
           <FooterLink
-            liClass="mb-4"
+            class="mb-4"
             href="https://forms.gle/83JgVNWmzafGPjM67"
             target="_blank">Newsletter</FooterLink
           >
-          <FooterLink liClass="mb-4" href="/faq">FAQs</FooterLink>
+          <FooterLink class="mb-4" href="/faq">FAQs</FooterLink>
           <FooterLink
-          liClass="mb-4 md:col-span-2 col-span-3"
+          class="mb-4 md:col-span-2 col-span-3"
           href="https://www.ieee.org/membership/join/index.html"
           >Become an IEEE Student</FooterLink
           >
           <FooterLink
-            liClass="mb-4 col-span-3"
+            class="mb-4 col-span-3"
             href="https://github.com/notkaramel/IEEE-McGill"
             target="">Contribute to this project!</FooterLink
           >
@@ -53,12 +53,12 @@
 
         <FooterLinkGroup class="grid md:grid-cols-3">
           <FooterLink
-            liClass="mb-4"
+            class="mb-4"
             href="https://www.instagram.com/ieeemcgill/"
             target="_blank">Instagram</FooterLink
           >
           <FooterLink
-            liClass="mb-4"
+            class="mb-4"
             href="https://www.facebook.com/mcgillieeesb"
             target="_blank">Facebook</FooterLink
           >
@@ -69,7 +69,7 @@
   <hr class="my-2 border-gray-300 sm:mx-auto dark:border-gray-700" />
   <div class="inline-flex">
     <div class="text-center mr-5">
-      <DarkMode btnClass={darkModeClasses} />
+      <DarkMode class={darkModeClasses} />
     </div>
     <div class="col-span-3 self-center justify-self-start">
       <FooterCopyright

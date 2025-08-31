@@ -1,9 +1,7 @@
 <script>
   import { marked } from "marked";
-  import style from "$lib/markdown.css?inline";
 
   let markdown = $state("");
-  const stylesheet = `<style> + ${style} + </style>`
 </script>
 
 <h1>Markdown Editor</h1>
@@ -13,11 +11,10 @@
 
 <!-- Convert the markdown to HTML and display it -->
 <div class="preview">
-  {@html stylesheet}
   {@html marked.parse(markdown)}
 </div>
 
-<style lang="postcss">
+<style>
   textarea,
   .preview {
     box-sizing: border-box;

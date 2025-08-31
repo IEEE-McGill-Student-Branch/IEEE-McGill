@@ -8,16 +8,25 @@
 </head>
 
 <Section>
-  <h1>Frequently Asked Questions</h1>
+  <h1 class="text-2xl text-center font-semibold px-4 mt-4 mb-8">
+    Frequently Asked Questions
+  </h1>
 
   <Accordion multiple>
-    <AccordionItem class="flex items-center justify-between w-full font-medium text-left group-first:rounded-t-xl border-gray-200 dark:border-gray-700">
+    <AccordionItem
+      class="flex items-center justify-between w-full font-medium text-left group-first:rounded-t-xl border-gray-200 dark:border-gray-700"
+    >
       {#snippet header()}
-            <span >How to register for IEEE Student Membership?</span>
-          {/snippet}
+        <span>How to register for IEEE Student Membership?</span>
+      {/snippet}
       <p class="mb-2 text-black dark:text-gray-200">
-        Follow the link to <a href="htstps://www.ieee.org/membership/join/index.html" target="_blank" class="underline text-rose-600 dark:text-rose-200">IEEE Membership</a>
-        and select <b> "Join as a student"</b>. Follow the steps to create your account! <br>
+        Follow the link to <a
+          href="htstps://www.ieee.org/membership/join/index.html"
+          target="_blank"
+          class="underline text-rose-600 dark:text-rose-200">IEEE Membership</a
+        >
+        and select <b> "Join as a student"</b>. Follow the steps to create your
+        account! <br />
         <!-- Don't forget to use a discount code at checkout if you have one! (psst, we have one below!) -->
       </p>
 
@@ -26,18 +35,19 @@
 
     <AccordionItem>
       {#snippet header()}
-            <div >Is there any discount for the membership?</div>
-          {/snippet}
+        <div>Is there any discount for the membership?</div>
+      {/snippet}
       <p class="mb-2 text-black dark:text-gray-200">
         <!-- Yes! Use code <b class="text-rose-600 dark:text-rose-200">FUTURE50</b> at registration checkout for 50% discount! -->
-        Unfortunately, there is no discount code available at the moment :( <br>
+        Unfortunately, there is no discount code available at the moment :(
+        <br />
       </p>
     </AccordionItem>
 
     <AccordionItem>
       {#snippet header()}
-            <div >How can I get updates on events by IEEE McGill?</div>
-          {/snippet}
+        <div>How can I get updates on events by IEEE McGill?</div>
+      {/snippet}
       <p class="text-black dark:text-gray-200">
         You can sign up to our newsletter at
         <a
@@ -51,9 +61,3 @@
     </AccordionItem>
   </Accordion>
 </Section>
-
-<style lang="postcss">
-  h1 {
-    @apply text-2xl text-center font-semibold px-4 mt-4 mb-8;
-  }
-</style>
