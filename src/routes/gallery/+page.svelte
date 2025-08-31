@@ -37,7 +37,7 @@
         </Carousel>
     <Thumbnails class="bg-transparent gap-3"   images={data.images}>
         {#snippet children({ Thumbnail, image })}
-                <Thumbnail {...image} class="h-16 rounded-md shadow-xl hover:outline hover:outline-primary-500" activeClass="outline outline-primary-400"/>
+                <Thumbnail {...image} class="h-16 rounded-md shadow-xl hover:outline-solid hover:outline-primary-500" activeClass="outline outline-primary-400"/>
                     {/snippet}
         </Thumbnails>
 </Section>

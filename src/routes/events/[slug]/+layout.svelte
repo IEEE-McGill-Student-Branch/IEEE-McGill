@@ -37,6 +37,6 @@
   }
 
   #other-titles {
-    @apply decoration-clone cursor-pointer text-xl;
+    @apply box-decoration-clone cursor-pointer text-xl;
   }
 </style>
