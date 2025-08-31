@@ -1,7 +1,7 @@
 <script>
   import Section from "$components/Section.svelte";
   import Sponsor from "$components/Sponsor.svelte";
-  export let data;
+  let { data } = $props();
 </script>
 
 <head>
@@ -13,9 +13,11 @@
   <div class="flex justify-center flex-row flex-wrap">
     {#each data.sponsors as sponsor}
       <Sponsor sponsorLink={sponsor.link}>
-        <div slot="logo">
-          <img class="logo" src={sponsor.logo} alt={sponsor.name} />
-        </div>
+        {#snippet logo()}
+                <div >
+            <img class="logo" src={sponsor.logo} alt={sponsor.name} />
+          </div>
+              {/snippet}
       </Sponsor>
     {/each}
   </div>

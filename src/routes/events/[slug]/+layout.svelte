@@ -1,11 +1,11 @@
 <script>
   import Section from "$components/Section.svelte";
-  export let data;
+  let { data, children } = $props();
 </script>
 
 <div class="layout">
   <main class="lg:col-span-2">
-    <slot />
+    {@render children?.()}
   </main>
 
   <aside>

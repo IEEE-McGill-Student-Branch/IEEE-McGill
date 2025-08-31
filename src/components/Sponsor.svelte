@@ -1,16 +1,20 @@
 <script>
+  
   /**
-   * @type {string}
-   * The website link of the sponsor
+   * @typedef {Object} Props
+   * @property {string} sponsorLink
+   * @property {import('svelte').Snippet} [logo]
    */
-  export let sponsorLink;
+
+  /** @type {Props} */
+  let { sponsorLink, logo } = $props();
 </script>
 
 <div class="sblock">
   <a href={sponsorLink} rel="external" target="_blank">
-    <slot name="logo">
+    {#if logo}{@render logo()}{:else}
       <em><img src="https://via.placeholder.com/150" alt="sponsor-logo-missing"/></em>
-    </slot>
+    {/if}
   </a>
 </div>
 

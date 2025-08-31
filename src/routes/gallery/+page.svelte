@@ -8,8 +8,14 @@
      */
     const scaleAnimation = (x) => scale(x, { duration: 500, easing: quintOut });
 
-    /** @type {import('./$types').PageData} */
-    export let data;
+    
+    /**
+     * @typedef {Object} Props
+     * @property {import('./$types').PageData} data
+     */
+
+    /** @type {Props} */
+    let { data } = $props();
 </script>
 
 <title>Gallery</title>
@@ -20,14 +26,18 @@
     <Carousel
         images={data.images}
         transition={scaleAnimation}
-        let:Controls
-        let:Indicators
+        
+        
         class="h-1/2"
     >
-        <Controls />
-        <Indicators />
-    </Carousel>
-    <Thumbnails class="bg-transparent gap-3" let:Thumbnail let:image images={data.images}>
-        <Thumbnail {...image} class="h-16 rounded-md shadow-xl hover:outline hover:outline-primary-500" activeClass="outline outline-primary-400"/>
-    </Thumbnails>
+        {#snippet children({ Controls, Indicators })}
+                <Controls />
+            <Indicators />
+                    {/snippet}
+        </Carousel>
+    <Thumbnails class="bg-transparent gap-3"   images={data.images}>
+        {#snippet children({ Thumbnail, image })}
+                <Thumbnail {...image} class="h-16 rounded-md shadow-xl hover:outline hover:outline-primary-500" activeClass="outline outline-primary-400"/>
+                    {/snippet}
+        </Thumbnails>
 </Section>

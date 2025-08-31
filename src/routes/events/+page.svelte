@@ -1,7 +1,7 @@
 <script>
   import Section from "$components/Section.svelte";
   import EventPost from "$components/EventPost.svelte";
-  export let data;
+  let { data } = $props();
 
 </script>
 
@@ -15,18 +15,24 @@
   <div id="eventPosts">
     {#each data.summaries as event}
       <EventPost eventSlug={event.slug}>
-        <div slot="thumbnail">
-          <img
-            src={event.background}
-            alt="Event {event.title} thumbnail"
-          />
-        </div>
-        <div slot="title">{event.title}</div>
+        {#snippet thumbnail()}
+                <div >
+            <img
+              src={event.background}
+              alt="Event {event.title} thumbnail"
+            />
+          </div>
+              {/snippet}
+        {#snippet title()}
+                <div >{event.title}</div>
+              {/snippet}
         <!-- <div slot=date>{event.date}</div>
         <div slot=location>{event.location}</div> -->
-        <div slot="shortDescription">
-          {@html event.shortDesc}
-        </div>
+        {#snippet shortDescription()}
+                <div >
+            {@html event.shortDesc}
+          </div>
+              {/snippet}
       </EventPost>
     {/each}
   </div>

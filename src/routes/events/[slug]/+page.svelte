@@ -3,7 +3,7 @@
   import style from "$lib/markdown.css?inline";
   const stylesheet = `<style> + ${style} + </style>`
 
-  export let data;
+  let { data } = $props();
 </script>
 
 <title>{data.post.title}</title>

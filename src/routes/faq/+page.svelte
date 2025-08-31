@@ -12,7 +12,9 @@
 
   <Accordion multiple>
     <AccordionItem class="flex items-center justify-between w-full font-medium text-left group-first:rounded-t-xl border-gray-200 dark:border-gray-700">
-      <span slot="header">How to register for IEEE Student Membership?</span>
+      {#snippet header()}
+            <span >How to register for IEEE Student Membership?</span>
+          {/snippet}
       <p class="mb-2 text-black dark:text-gray-200">
         Follow the link to <a href="htstps://www.ieee.org/membership/join/index.html" target="_blank" class="underline text-rose-600 dark:text-rose-200">IEEE Membership</a>
         and select <b> "Join as a student"</b>. Follow the steps to create your account! <br>
@@ -23,7 +25,9 @@
     </AccordionItem>
 
     <AccordionItem>
-      <div slot="header">Is there any discount for the membership?</div>
+      {#snippet header()}
+            <div >Is there any discount for the membership?</div>
+          {/snippet}
       <p class="mb-2 text-black dark:text-gray-200">
         <!-- Yes! Use code <b class="text-rose-600 dark:text-rose-200">FUTURE50</b> at registration checkout for 50% discount! -->
         Unfortunately, there is no discount code available at the moment :( <br>
@@ -31,7 +35,9 @@
     </AccordionItem>
 
     <AccordionItem>
-      <div slot="header">How can I get updates on events by IEEE McGill?</div>
+      {#snippet header()}
+            <div >How can I get updates on events by IEEE McGill?</div>
+          {/snippet}
       <p class="text-black dark:text-gray-200">
         You can sign up to our newsletter at
         <a

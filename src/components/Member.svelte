@@ -1,3 +1,4 @@
+<!-- @migration-task Error while migrating Svelte code: This migration would change the name of a slot (email to email_1) making the component unusable -->
 <script>
   /**
    * @type {string}

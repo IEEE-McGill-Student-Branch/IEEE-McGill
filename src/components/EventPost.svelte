@@ -1,22 +1,34 @@
 <script>
+  
   /**
-   * @type {string}
+   * @typedef {Object} Props
+   * @property {string} eventSlug
+   * @property {import('svelte').Snippet} [thumbnail]
+   * @property {import('svelte').Snippet} [title]
+   * @property {import('svelte').Snippet} [shortDescription]
    */
-  export let eventSlug;
+
+  /** @type {Props} */
+  let {
+    eventSlug,
+    thumbnail,
+    title,
+    shortDescription
+  } = $props();
 </script>
 
 <a href="/events/{eventSlug}">
   <article id={eventSlug}>
     <div class="img">
-      <slot name="thumbnail">
+      {#if thumbnail}{@render thumbnail()}{:else}
         <em>Thumbnail in the making :)</em>
-      </slot>
+      {/if}
     </div>
 
     <h2>
-      <slot name="title">
+      {#if title}{@render title()}{:else}
         <em>No title for this event post?</em>
-      </slot>
+      {/if}
     </h2>
 
     <!-- <p>
@@ -24,9 +36,9 @@
     </p> -->
 
     <p>
-      <slot name="shortDescription">
+      {#if shortDescription}{@render shortDescription()}{:else}
         <em>Empty description</em>
-      </slot>
+      {/if}
     </p>
   </article>
 </a>

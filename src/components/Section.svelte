@@ -1,8 +1,18 @@
+<script>
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('svelte').Snippet} [children]
+	 */
+
+	/** @type {Props} */
+	let { children } = $props();
+</script>
+
 <div class="flex justify-center">
 	<div class="section">
-		<slot>
+		{#if children}{@render children()}{:else}
 			<em>Put content here</em>
-		</slot>
+		{/if}
 	</div>
 </div>
 	

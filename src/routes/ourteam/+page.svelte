@@ -2,7 +2,7 @@
   import Member from "$components/Member.svelte";
   import Section from "$components/Section.svelte";
   import GroupPicture from "$images/exec/IEEE-AllExecs.jpg";
-  export let data;
+  let { data } = $props();
 </script>
 
 <title>Meet the team!</title>
@@ -16,17 +16,26 @@
   <div class="memberDiv">
     {#each data.members as member}
       <Member email={member.email}>
-        <div slot="profilepic">
-          <img
-            id="profilepic"
-            src={member.profilepic}
-            alt="{member.name} profile picture"
-          />
-        </div>
-        <div slot="name">{member.name}</div>
-        <div slot="pronouns">{member.pronouns}</div>
-        <div slot="role">{member.role}</div>
-        <div slot="email">{member.email}</div>
+        {#snippet profilepic()}
+                <div >
+            <img
+              id="profilepic"
+              src={member.profilepic}
+              alt="{member.name} profile picture"
+            />
+          </div>
+              {/snippet}
+        {#snippet name()}
+                <div >{member.name}</div>
+              {/snippet}
+        {#snippet pronouns()}
+                <div >{member.pronouns}</div>
+              {/snippet}
+        {#snippet role()}
+                <div >{member.role}</div>
+              {/snippet}
+        <!-- @migration-task: migrate this slot by hand, `email` would shadow a prop on the parent component -->
+  <div slot="email">{member.email}</div>
       </Member>
     {/each}
   </div>

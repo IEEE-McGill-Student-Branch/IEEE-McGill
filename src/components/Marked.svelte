@@ -2,14 +2,14 @@
   import { marked } from "marked";
   import style from "$lib/markdown.css?inline";
 
-  let markdown = "";
+  let markdown = $state("");
   const stylesheet = `<style> + ${style} + </style>`
 </script>
 
 <h1>Markdown Editor</h1>
 
 <!-- Declare a textarea where the user can enter markdown, and bind it to the variable `markdown` -->
-<textarea bind:value={markdown} placeholder="Enter markdown here" />
+<textarea bind:value={markdown} placeholder="Enter markdown here"></textarea>
 
 <!-- Convert the markdown to HTML and display it -->
 <div class="preview">
