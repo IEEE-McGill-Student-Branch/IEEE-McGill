@@ -1,7 +1,8 @@
 ## The Official Website of IEEE Student Branch of McGill University
 
-** Official link: https://ieee.mcgilleus.ca **
-** Automatic Deployment Link: https://ieeemcgill.com **
+**Official link: https://ieee.mcgilleus.ca**
+
+**Automatic Deployment Link: https://ieeemcgill.com**
 
 ## Public Contribution
 
