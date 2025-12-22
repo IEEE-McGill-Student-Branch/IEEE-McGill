@@ -1,5 +1,6 @@
 import IEEE_Montreal from "$images/sponsors/ieee-montreal.png";
 import StripoLogo from "$images/sponsors/stripo.png";
+import EUSLogo from "$images/sponsors/EUS.png";
 
 export const sponsors = [  
   {
@@ -19,7 +20,7 @@ export const sponsors = [
   },
   {
     name: "McGill EUS",
-    logo: "https://eus.wiki/images/c/c8/Eus_logo.png",
+    logo: EUSLogo,
     link: "https://mcgilleus.ca"
   }
 ];
