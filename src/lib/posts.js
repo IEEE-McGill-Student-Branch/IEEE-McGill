@@ -5,10 +5,9 @@ import Arduino from "$images/events/Arduino.png"
 import TheFactory from "$images/events/TheFactoryLogo.png";
 import AWS from "$images/events/aws-logo.webp"
 import IEEEConcordia from "$images/events/IEEEConcordia.png";
-import { readFileSync } from "fs";
-import { join } from "path";
-import { fileURLToPath } from "url";
-import { dirname } from "path";
+import { readFileSync } from "node:fs";
+import { join, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
 // Get the project root directory
 // File is at src/lib/posts.js, so we go up 2 levels to get to project root
@@ -138,9 +137,20 @@ const postConfigs = [
 ];
 
 /**
+ * @typedef {Object} Post
+ * @property {string} slug - Unique identifier for the post
+ * @property {string} title - Title of the post
+ * @property {string} date - Date of the event
+ * @property {string} location - Location of the event
+ * @property {string} background - Background image URL
+ * @property {string} shortDescription - Short description of the event
+ * @property {string} content - Full markdown content of the post
+ */
+
+/**
  * Load all posts with their content
  * This function is called dynamically to enable hot-reloading in dev mode
- * @returns {Promise<Array<Object>>} Array of post objects with content
+ * @returns {Promise<Post[]>} Array of post objects with content
  */
 export async function loadPosts() {
   const posts = await Promise.all(
