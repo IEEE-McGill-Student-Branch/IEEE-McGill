@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @plugin 'flowbite/plugin';
@@ -7,6 +8,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+  /* Primary color palette */
   --color-primary-50: #fffefd;
   --color-primary-100: #fff1ee;
   --color-primary-200: #ffe4de;
@@ -17,6 +19,22 @@
   --color-primary-700: #b90f37;
   --color-primary-800: #cc4522;
   --color-primary-900: #a5371b;
+
+  /* Rose accent colors (IEEE brand) */
+  --color-rose-light: #fb7185;
+  --color-rose-main: #f43f5e;
+  --color-rose-dark: #e11d48;
+  --color-pink-accent: #ec4899;
+
+  /* Dark mode background colors (lighter for better legibility) */
+  --color-dark-bg: #111827;
+  --color-dark-card: #1e293b;
+  --color-dark-card-hover: #334155;
+  --color-dark-border: #475569;
+
+  /* Font family */
+  --font-family-outfit: 'Outfit', sans-serif;
+  --font-family-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
 }
 
 /*
@@ -39,39 +57,82 @@
 
 body {
   font: 16px;
-  @apply font-sans m-0;
-  overflow: scroll;
+  font-family: var(--font-family-sans);
+  @apply m-0;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
+/* ===== Shared Utility Classes ===== */
+
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-1 { animation-delay: 0.2s; }
+.fade-in-delay-2 { animation-delay: 0.4s; }
+.fade-in-delay-3 { animation-delay: 0.6s; }
+.fade-in-delay-4 { animation-delay: 0.8s; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Float animation */
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(225, 29, 72, 0.25);
+}
+
+/* ===== Markdown Content Styling ===== */
 .content {
-  /* Styling to markdown components of the post */
   * {
-    @apply dark:text-white;
+    @apply dark:text-gray-100;
   }
 
   h1 {
     @apply font-bold text-2xl pt-3 pb-1 mb-2;
-    @apply border-b-2 border-gray-400;
+    @apply border-b-2 border-gray-400 dark:border-gray-500;
   }
 
   h2 {
     @apply font-bold text-xl pt-3 pb-1 mb-2;
-    @apply border-b-2 border-gray-400;
+    @apply border-b-2 border-gray-400 dark:border-gray-500;
   }
   p {
-    @apply font-sans text-lg py-1 text-left;
+    @apply text-lg py-1 text-left;
+    @apply dark:text-gray-200;
   }
   code {
     @apply font-mono text-sm text-rose-800 bg-slate-200 py-1 px-2 rounded-md;
-    @apply dark:bg-gray-600;
+    @apply dark:bg-slate-700 dark:text-rose-300;
   }
   a {
-    @apply text-blue-600 dark:text-cyan-400;
-    @apply hover:text-blue-500 dark:hover:text-cyan-200;
+    @apply text-blue-600 dark:text-cyan-300;
+    @apply hover:text-blue-500 dark:hover:text-cyan-100;
   }
   ul {
     @apply list-outside list-disc pl-6 text-left;
-    @apply marker:text-rose-800 dark:marker:text-rose-200;
+    @apply marker:text-rose-800 dark:marker:text-rose-300;
+    @apply dark:text-gray-200;
     ul {
       list-style-type: circle;
     }
@@ -79,8 +140,8 @@ body {
 
   button {
     @apply bg-rose-500 py-2 px-4 my-1 md:my-2 rounded;
-    @apply dark:bg-gray-600;
-    @apply hover:bg-rose-600 dark:hover:bg-gray-500;
+    @apply dark:bg-rose-600;
+    @apply hover:bg-rose-600 dark:hover:bg-rose-500;
     /* Overwrite a selector above */
     a {
       @apply text-white font-bold dark:text-white;
@@ -89,12 +150,12 @@ body {
   }
 
   blockquote {
-    @apply bg-gray-100 dark:bg-gray-600;
+    @apply bg-gray-100 dark:bg-slate-700;
     @apply border-l-4 pl-2;
-    @apply border-gray-400 dark:border-rose-500;
+    @apply border-gray-400 dark:border-rose-400;
   }
 
-  @apply text-gray-700;
+  @apply text-gray-700 dark:text-gray-200;
   @apply text-justify;
   @apply mb-4;
 }

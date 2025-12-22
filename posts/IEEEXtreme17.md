@@ -14,7 +14,7 @@ Get your team together and register today. Together, you can prepare for the com
 - Visit the [IEEEXtreme](https://ieeextreme.org)
 - Select **`TEAM/PROCTOR REGISTRATION`** option, then **`REGISTER AS PARTICIPANT`**
 - Login, or create an IEEE account
-  - If you don’t have an IEEE account, you can create one by clicking on the **`Create an IEEE Account`** link. Checkout our [FAQs](/faq) for more instruction and discount code!
+  - If you don’t have an IEEE account, you can create one by clicking on the **`Create an IEEE Account`** link. Checkout our FAQs for more instruction and discount code!
 - Fill out the Team information (3 members max)
 - Fill the Proctor’s information
 - Review and submit the application
