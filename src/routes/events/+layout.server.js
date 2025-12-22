@@ -1,6 +1,7 @@
-import { posts } from '$lib/posts.js';
+import { loadPosts } from '$lib/posts.js';
 
-export function load() {
+export async function load() {
+	const posts = await loadPosts();
 	return {
 		summaries: posts.map((post) => ({
 			slug: post.slug,

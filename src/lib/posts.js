@@ -5,32 +5,54 @@ import Arduino from "$images/events/Arduino.png"
 import TheFactory from "$images/events/TheFactoryLogo.png";
 import AWS from "$images/events/aws-logo.webp"
 import IEEEConcordia from "$images/events/IEEEConcordia.png";
-/*
-old way to fetch content:
-  import fs from "fs";
-  content = fs.readFileSync("posts/AWSWorkshop.md", "utf-8");
-*/
+import { readFileSync } from "fs";
+import { join } from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+// Get the project root directory
+// File is at src/lib/posts.js, so we go up 2 levels to get to project root
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename); // src/lib
+const projectRoot = join(__dirname, "..", ".."); // Go up to project root
 
 const rootPath = "https://raw.githubusercontent.com/IEEE-McGill-Student-Branch/IEEE-McGill/main/posts/";
+const isDev = import.meta.env.DEV;
 
 /**
- * Get the content of a file from the repository on GitHub
+ * Get the content of a file from local filesystem (dev) or GitHub (prod)
  * @param {string} fileName 
  * @returns the content of the file in string format
  */
 async function fetchContent(fileName) {
-  /** @type {Promise<string | void>} */
-  let content = fetch(rootPath + fileName)
-    .then((response) => response.text())
-    .then((text) => text)
-    .catch((error) => {
-      console.error("Error fetching content: ", error);
-    });
-  return content;
+  if (isDev) {
+    // In dev mode, read from local filesystem for hot-reloading
+    try {
+      const filePath = join(projectRoot, "posts", fileName);
+      return readFileSync(filePath, "utf-8");
+    } catch (error) {
+      console.error(`Error reading local file ${fileName}:`, error);
+      return "";
+    }
+  } else {
+    // In production, fetch from GitHub
+    try {
+      const response = await fetch(rootPath + fileName);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch ${fileName}: ${response.statusText}`);
+      }
+      return await response.text();
+    } catch (error) {
+      console.error(`Error fetching content from GitHub for ${fileName}:`, error);
+      return "";
+    }
+  }
 }
 
-
-export const posts = [
+/**
+ * Post metadata configuration
+ */
+const postConfigs = [
   {
     slug: "AWS-Workshop",
     title: "AWS Workshop",
@@ -38,7 +60,7 @@ export const posts = [
     location: "279 MacDonald Building - McGill University",
     background: AWS,
     shortDescription: "Cloud computing workshop with AWS",
-    content: await fetchContent("AWSWorkshop.md"),
+    fileName: "AWSWorkshop.md",
   },
   {
     slug: "IEEE-McGill-Elections-2024",
@@ -47,7 +69,7 @@ export const posts = [
     location: "Online",
     background: IEEEMcGill,
     shortDescription: "Your chance to join the IEEE McGill executives team!",
-    content: await fetchContent("IEEEElection2024.md"),
+    fileName: "IEEEElection2024.md",
   },
   {
     slug: "IEEE-Social-Event",
@@ -56,7 +78,7 @@ export const posts = [
     location: "TBA",
     background: IEEEMcGill,
     shortDescription: "Meet the execs and have a good time!",
-    content: await fetchContent("IEEESocial.md"),
+    fileName: "IEEESocial.md",
   },
   {
     slug: "Arduino-Workshop-P1",
@@ -65,7 +87,7 @@ export const posts = [
     location: "WONG 1050 - McGill University",
     background: Arduino,
     shortDescription: "Learn about the basics of Arduino!",
-    content: await fetchContent("ArduinoWorkshop-P1.md"),
+    fileName: "ArduinoWorkshop-P1.md",
   },
   {
     slug: "Arduino-Workshop-P2",
@@ -74,7 +96,7 @@ export const posts = [
     location: "WONG 1050 - McGill University",
     background: Arduino,
     shortDescription: "Advanced techniques and usage of Arduino",
-    content: await fetchContent("ArduinoWorkshop-P2.md"),
+    fileName: "ArduinoWorkshop-P2.md",
   },
   {
     slug: "ForgeMcGill",
@@ -83,7 +105,7 @@ export const posts = [
     location: "Trottier Building - Floor 0 & Floor 5",
     background: TheFactory,
     shortDescription: "A hardware hackathon organized by The Factory",
-    content: await fetchContent("ForgeMcGill.md"),
+    fileName: "ForgeMcGill.md",
   },
   {
     slug: "Robowars",
@@ -92,7 +114,7 @@ export const posts = [
     location: "TBA",
     background: IEEEConcordia,
     shortDescription: "A robotic competition organized by IEEE Concordia",
-    content: await fetchContent("Robowars.md"),
+    fileName: "Robowars.md",
   },
   {
     slug: "IEEE-Day-2023",
@@ -102,9 +124,8 @@ export const posts = [
     background: IEEEDay,
     shortDescription:
       "Everything you need to know about IEEE Day 2023: Registration, Venue, and more!",
-    content: await fetchContent("IEEE-Day-2023.md"),
+    fileName: "IEEE-Day-2023.md",
   },
-
   {
     slug: "IEEEXtreme-17.0",
     title: "IEEEXtreme 17.0",
@@ -112,6 +133,32 @@ export const posts = [
     location: "INRS - Place Bonaventure",
     background: IEEEExtreme,
     shortDescription: "Information about the event, registration, prizes, and more!",
-    content: await fetchContent("IEEEXtreme17.md"),
+    fileName: "IEEEXtreme17.md",
   },
 ];
+
+/**
+ * Load all posts with their content
+ * This function is called dynamically to enable hot-reloading in dev mode
+ * @returns {Promise<Array<Object>>} Array of post objects with content
+ */
+export async function loadPosts() {
+  const posts = await Promise.all(
+    postConfigs.map(async (config) => {
+      const content = await fetchContent(config.fileName);
+      return {
+        slug: config.slug,
+        title: config.title,
+        date: config.date,
+        location: config.location,
+        background: config.background,
+        shortDescription: config.shortDescription,
+        content: content,
+      };
+    })
+  );
+  return posts;
+}
+
+// Export postConfigs for cases where only metadata is needed
+export { postConfigs };
