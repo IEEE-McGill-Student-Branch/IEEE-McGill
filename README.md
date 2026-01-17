@@ -14,11 +14,11 @@
 
 ## Maintainers
 
-| Year        | Author                   | Role on the team |
-| ----------- | ------------------------ | ---------------- |
-| 2025 - 2026 | Antoine Phan @notkaramel | VP IT            |
-| 2024 - 2025 | Simon Ngassam @TTG3333   | VP IT            |
-| 2023 - 2024 | Antoine Phan @notkaramel | Director of Web  |
+| Year        | Author                   | Role on the team          |
+| ----------- | ------------------------ | ------------------------- |
+| 2025 -      | Antoine Phan @notkaramel | VP IT / ECSESS VP TechDev |
+| 2024 - 2025 | Simon Ngassam @TTG3333   | VP IT                     |
+| 2023 - 2024 | Antoine Phan @notkaramel | Director of Web           |
 
 ## Old versions
 
