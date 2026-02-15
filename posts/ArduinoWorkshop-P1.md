@@ -27,7 +27,7 @@ This workshop is open to anyone interested in learning about Arduino and buildin
 
 - This workshop will cost $5 and payment can be made via e-transfer or cash at the door.
 - There will be free pizza and drinks at the end! 🍕🍕🍕
-- Please bring your own computer with the (Arduino IDE)[https://www.arduino.cc/en/software] installed.
+- Please bring your own computer with the [Arduino IDE](https://www.arduino.cc/en/software) installed.
 - Your computer will connect via USB-A to the Arduino.
 - Please bring an adapter if your computer does not have a USB-A port.
 

@@ -1,8 +1,9 @@
 import { error } from "@sveltejs/kit";
-import { posts } from "$lib/posts.js";
+import { loadPosts } from "$lib/posts.js";
 import { marked } from "marked";
 
-export function load({ params }) {
+export async function load({ params }) {
+  const posts = await loadPosts();
   const post = posts.find((post) => post.slug === params.slug);
 
   if (!post) error(404);
